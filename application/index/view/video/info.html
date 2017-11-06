@@ -1,0 +1,659 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0044)http://www.liushouer.com/Media/Special/16008 -->
+<html style="font-size:75px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>草原运动会|黑龙江留守儿童互助平台</title>
+    
+    <link rel="stylesheet" href="/static/css/detail.min.css">
+
+    <script src="/static/js/jquery-1.11.1.min.js"></script>
+<script src="/static/js/jwplayer.html5.js"></script><style type="text/css"></style></head>
+
+<body style="">
+    <div id="pageContent">
+        
+
+
+
+<header id="header">
+    <div class="inner">
+        <a class="logo" href="http://www.liushouer.com/">
+            <img src="/static/image/info/logo.png">
+        </a>
+            <div class="searchBox">
+                <div class="search">
+                    <div class="category">
+                        <span class="selected" id="spSearch">特色视频</span>
+                        <i class="arrow"></i>
+                    </div>
+                    <input class="searchInp" id="txtSearch" type="text" placeholder="快搜索你感兴趣的内容吧" onkeydown="if (event.keyCode == 13) { mySearch(); }">
+                    <input class="searchBtn" id="btnSearch" type="button" value="搜索">
+                </div>
+                <ul class="categoryList">
+                    <li>电子书</li>
+                    <li>图画书</li>
+                    <li>视频</li>
+                    <li>特色视频</li>
+                </ul>
+            </div>
+         
+        <div class="loginInfo" id="LoginDiv">
+
+    <div class="login" id="divLogin">
+        <em class="loginBtn">登录</em>
+        <em class="registerBtn">注册</em>
+    </div>
+</div>
+    </div>
+</header>
+
+
+<script>
+    function mySearch() {
+        var key = $("#txtSearch").val();
+        if (key.length <= 0) {
+            alert("请输入您感兴趣的内容!");
+            return false;
+        }
+        var type = $("#spSearch").text();
+        type = type == "电子书" ? "book" : type == "图画书" ? "picture" : type == "视频" ? "video" : "special"
+        window.location.href = "/Home/Search?type=" + type + "&keyword=" + encodeURIComponent(key);
+    }
+    $("#btnSearch").click(function () {
+        mySearch();
+    });
+    function chkLogin() {
+        $.get("/member/chklogin?t="+Math.random() , function (data) { 
+                $("#LoginDiv").html(data); 
+        });
+    }
+    chkLogin();
+</script>
+        <!--content start-->
+        
+
+
+
+<div id="detailContent">
+    <div class="ebookDetail">
+        <div class="topBg"></div>
+        <div class="inner">
+            <p class="crumb">当前位置：<em><a href="http://www.liushouer.com/">首页</a></em> ＞ <em><a href="http://www.liushouer.com/Home/List?type=special">特色课堂</a></em> ＞ <em class="cur">视频详情</em></p>
+            <a href="javascript:back();"><img class="back" src="/static/image/info/back.png"></a>
+            <h1 id="title">草原运动会<span class="scanNum">浏览次数：10</span></h1>
+
+            <div class="box pr clearfix videoContainer">
+                
+                <div class="videoBox">
+                    <div class="jwplayer playlist-none " id="video" tabindex="0" style="width: 100%; height: 100%; background-color: rgb(0, 0, 0); opacity: 1;"><span class="jwmain" id="video_view"><span class="jwvideo" id="video_media" style="visibility: visible; opacity: 1;"><video x-webkit-airplay="allow" src="http://www.liushouer.com/DataFile/Video/CLSATUB1215172909267.mp4"></video></span><span class="jwcontrols"><div id="video_caption" class="jwcaptions"><div style="display: none; height: auto; position: absolute; bottom: 20px; text-align: center; width: 100%;"><div style="display: inline-block;"><span style="color: rgb(255, 255, 255); display: inline-block; font-family: Arial, sans-serif; font-style: normal; font-weight: normal; text-align: center; text-decoration: none; word-wrap: break-word; background-color: rgb(0, 0, 0);"></span></div></div></div><div id="video_display" class="jwdisplay" style="display: block;"><div class="jwpreview jwuniform"></div><div class="jwdisplayIcon" id="video_display_button" style="opacity: 0; display: table; background-size: 18px 100%, 36px 100%, 18px 100%; left: 0.5px;"><div class="jwtext" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 11px; line-height: 14px; font-family: Arial, Helvetica, sans-serif; color: rgb(255, 255, 255); display: none;"></div><div class="jwicon" id="video_display_button_play" style="width: 36px; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAA0CAQAAABI31KIAAABHUlEQVR4Ae2Vu0oDQRRAB2xSWVmmtQncLzFREUUsnW/wJ0SCWgQV8TUQBBEsjlgIFoJFCsFCCT5QgwZFtPGtncUWIcTZnd2pAnNOf2Bn5t5VgUCge8mpPtWrevxD+cbi1KTq948VXvjlbMM/Jk2aPPPjHZM7Ip88Y3JLy0e+M8fkmnYfMsbkkk7v+Uodkzr/2+AzVUxOsXvDh3NMToj3inenmByT7AVviTGp4WadV85XK0WVs4SOcHd3rVyyhg5xc91M6NhPOyDZFTOuEw97n3iXzZh2uv497C6YUe38ILFQMSM61Yjs0Om8Gdaph3abdmfNkM60RrZoWTaDOvNi2yRyxpQsETcKVapMm6JHJCI/tzTgEfH4QXYxgUDgD+1pwmmFlV3oAAAAAElFTkSuQmCC&quot;); background-size: 36px 52px; float: none; transform: rotate(0deg);"></div></div></div><img class="jwlogo" id="video_logo" style="display: none; visibility: visible; opacity: 1;"><div class="jwdock" id="video_dock"><div class="jwdockbuttons"><div class="capLeft"></div><div class="capRight"></div></div></div><span id="video_controlbar" class="jwcontrolbar" style="height: 30px; bottom: 10px; left: 10px; right: 10px; max-width: 800px; display: inline-block; opacity: 1;"><span class="jwbackground">&nbsp;</span><span class="jwcapLeft">&nbsp;</span><span class="jwgroup jwleft"><span class="jwplay jwtoggle" style=""><span><button tabindex="-1">&nbsp;</button></span><span class="jwblankDivider"></span></span><span class="jwprev jwbuttoncontainer" style="display: none;"><span><button tabindex="-1">&nbsp;</button></span><span class="jwblankDivider"></span></span><span class="jwnext jwbuttoncontainer" style="display: none;"><span><button tabindex="-1">&nbsp;</button></span><span class="jwblankDivider"></span></span><span id="video_controlbar_elapsed" class="jwtext jwelapsed jwhidden" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAeCAYAAAAPSW++AAAAD0lEQVQoU2NgGAWjYKQAAALuAAGL6/H9AAAAAElFTkSuQmCC&quot;) center center / 1px 30px repeat-x;">00:05</span></span><span class="jwgroup jwcenter" style="left: 72px; right: 96px;"><span class="jwslider jwtime" style="display: block;"><span class="jwtimeSliderCapLeft">&nbsp;</span><span class="jwrail"><span class="jwrailgroup Rail"><span class="jwtimeSliderRailCapLeft">&nbsp;</span><span class="jwtimeSliderRail">&nbsp;</span><span class="jwtimeSliderRailCapRight jwcapRight">&nbsp;</span></span><span class="jwrailgroup Buffer" style="width: 19%; opacity: 1;"><span class="jwtimeSliderBufferCapLeft">&nbsp;</span><span class="jwtimeSliderBuffer">&nbsp;</span><span class="jwtimeSliderBufferCapRight jwcapRight">&nbsp;</span></span><span class="jwprogressOverflow" style="width: 1.60075%; opacity: 1;"><span class="jwrailgroup Progress"><span class="jwtimeSliderProgressCapLeft">&nbsp;</span><span class="jwtimeSliderProgress">&nbsp;</span><span class="jwtimeSliderProgressCapRight jwcapRight">&nbsp;</span></span></span><span class="jwtimeSliderThumb jwthumb" style="margin-left: -8px; left: 1.60075%; opacity: 1;">&nbsp;</span><div class="jwoverlay" id="video_controlbar_timetooltip" style="padding: 5px 7px 8px;"><div class="jwarrow" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAYAAACnI+4yAAAAEklEQVR42mP4//8/AymYgeYaABssa5WUTzsyAAAAAElFTkSuQmCC&quot;) center center / 12px 3px; position: absolute; bottom: 0px; width: 12px; height: 3px; left: 50%;"></div><div class="jwborder jwtopleft" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAPklEQVR4XmMQFRVnBeIiIN4FxCeQMQOQU6ijq3/VycXjiau79zNkDJLcZWvv9MTGzumZta0jCgZJnkAXhPEBnhkmTDF7/FAAAAAASUVORK5CYII=&quot;) center center / 7px 4px; width: 7px; height: 4px; top: 0px; left: 0px;"></div><div class="jwborder jwbottomleft" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAMUlEQVR4AWMQFRU/YW3r+AwbBknusrSye4JLslBdQ/uqpbX9E2ySrEBcBMS7QVYgYwAWViWcql/T2AAAAABJRU5ErkJggg==&quot;) center center / 7px 4px; width: 7px; height: 4px; bottom: 3px; left: 0px;"></div><div class="jwborder jwtopright" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAPklEQVR42mMQFRU/gYZ3A3ERELMyuLp7P0PGTi4eT3R09a8CJbMYrG0dnyFjGzunZ7b2Tk+AkrswJGEYZAUA8XwmRnLnEVMAAAAASUVORK5CYII=&quot;) center center / 7px 4px; width: 7px; height: 4px; top: 0px; right: 0px;"></div><div class="jwborder jwbottomright" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAANUlEQVR42mOwtnV8hg2LioqfYMAmYWll9wQouQtD0tLa/om6hvZVoGQ2A0g7Gt4NxEVAzAoAZzolltlSH50AAAAASUVORK5CYII=&quot;) center center / 7px 4px; width: 7px; height: 4px; bottom: 3px; right: 0px;"></div><div class="jwborder jwleft" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAACCAYAAACUn8ZgAAAAFklEQVR42mMQFRU/YW3r+AwbZsAnCQBUPRWHq8l/fAAAAABJRU5ErkJggg==&quot;) center center / 7px 2px; width: 7px; left: 0px;"></div><div class="jwborder jwright" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAACCAYAAACUn8ZgAAAAFklEQVR42mOwtnV8hg2LioqfYMAnCQBwXRWHw2Rr1wAAAABJRU5ErkJggg==&quot;) center center / 7px 2px; width: 7px; right: 0px;"></div><div class="jwborder jwtop" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAHUlEQVR42mMUFRU/wUACYHR1935GkgZrW0faagAAqHQGCWgiU9QAAAAASUVORK5CYII=&quot;) center center / 12px 4px; height: 4px; top: 0px;"></div><div class="jwborder jwbottom" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAGElEQVR42mOwtnV8RgpmoL0GUVHxE6RgAO7IRsl4Cw8cAAAAAElFTkSuQmCC&quot;) center center / 12px 4px; height: 4px; bottom: 3px;"></div><div class="jwback" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEUlEQVR4AWOwtnV8RgomWQMAWvcm6W7AcF8AAAAASUVORK5CYII=&quot;) center center / 12px 2px; left: 7px; right: 7px; top: 4px; bottom: 7px;"></div><div class="jwcontents"><div><div id="video_controlbar_thumb" style="display: none;"></div><div class="jwoverlaytext">00:00</div></div></div></div></span><span class="jwtimeSliderCapRight">&nbsp;</span></span><span id="video_controlbar_alt" class="jwtext jwalt" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAeCAYAAAAPSW++AAAAD0lEQVQoU2NgGAWjYKQAAALuAAGL6/H9AAAAAElFTkSuQmCC&quot;) center center / 1px 30px repeat-x; display: none;"></span></span><span class="jwgroup jwright" style="right: 8px;"><span id="video_controlbar_duration" class="jwtext jwduration jwhidden" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAeCAYAAAAPSW++AAAAD0lEQVQoU2NgGAWjYKQAAALuAAGL6/H9AAAAAElFTkSuQmCC&quot;) center center / 1px 30px repeat-x;">05:18</span><span class="jwhd jwbuttoncontainer" style="display: none;"><span class="jwblankDivider"></span><span><button tabindex="-1">&nbsp;</button></span><div class="jwoverlay" id="video_controlbar_hd_overlay" style="padding: 5px 7px 8px; left: 50%;"><div class="jwarrow" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAYAAACnI+4yAAAAEklEQVR42mP4//8/AymYgeYaABssa5WUTzsyAAAAAElFTkSuQmCC&quot;) center center / 12px 3px; position: absolute; bottom: 0px; width: 12px; height: 3px; left: 50%;"></div><div class="jwborder jwtopleft" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAPklEQVR4XmMQFRVnBeIiIN4FxCeQMQOQU6ijq3/VycXjiau79zNkDJLcZWvv9MTGzumZta0jCgZJnkAXhPEBnhkmTDF7/FAAAAAASUVORK5CYII=&quot;) center center / 7px 4px; width: 7px; height: 4px; top: 0px; left: 0px;"></div><div class="jwborder jwbottomleft" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAMUlEQVR4AWMQFRU/YW3r+AwbBknusrSye4JLslBdQ/uqpbX9E2ySrEBcBMS7QVYgYwAWViWcql/T2AAAAABJRU5ErkJggg==&quot;) center center / 7px 4px; width: 7px; height: 4px; bottom: 3px; left: 0px;"></div><div class="jwborder jwtopright" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAPklEQVR42mMQFRU/gYZ3A3ERELMyuLp7P0PGTi4eT3R09a8CJbMYrG0dnyFjGzunZ7b2Tk+AkrswJGEYZAUA8XwmRnLnEVMAAAAASUVORK5CYII=&quot;) center center / 7px 4px; width: 7px; height: 4px; top: 0px; right: 0px;"></div><div class="jwborder jwbottomright" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAANUlEQVR42mOwtnV8hg2LioqfYMAmYWll9wQouQtD0tLa/om6hvZVoGQ2A0g7Gt4NxEVAzAoAZzolltlSH50AAAAASUVORK5CYII=&quot;) center center / 7px 4px; width: 7px; height: 4px; bottom: 3px; right: 0px;"></div><div class="jwborder jwleft" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAACCAYAAACUn8ZgAAAAFklEQVR42mMQFRU/YW3r+AwbZsAnCQBUPRWHq8l/fAAAAABJRU5ErkJggg==&quot;) center center / 7px 2px; width: 7px; left: 0px;"></div><div class="jwborder jwright" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAACCAYAAACUn8ZgAAAAFklEQVR42mOwtnV8hg2LioqfYMAnCQBwXRWHw2Rr1wAAAABJRU5ErkJggg==&quot;) center center / 7px 2px; width: 7px; right: 0px;"></div><div class="jwborder jwtop" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAHUlEQVR42mMUFRU/wUACYHR1935GkgZrW0faagAAqHQGCWgiU9QAAAAASUVORK5CYII=&quot;) center center / 12px 4px; height: 4px; top: 0px;"></div><div class="jwborder jwbottom" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAGElEQVR42mOwtnV8RgpmoL0GUVHxE6RgAO7IRsl4Cw8cAAAAAElFTkSuQmCC&quot;) center center / 12px 4px; height: 4px; bottom: 3px;"></div><div class="jwback" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEUlEQVR4AWOwtnV8RgomWQMAWvcm6W7AcF8AAAAASUVORK5CYII=&quot;) center center / 12px 2px; left: 7px; right: 7px; top: 4px; bottom: 7px;"></div><div class="jwcontents"><div class="jwmenu" id="video_controlbar_hd"></div></div></div></span><span class="jwcc jwbuttoncontainer" style="display: none;"><span class="jwblankDivider"></span><span><button tabindex="-1">&nbsp;</button></span><div class="jwoverlay" id="video_controlbar_cc_overlay" style="padding: 5px 7px 8px; left: 50%;"><div class="jwarrow" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAYAAACnI+4yAAAAEklEQVR42mP4//8/AymYgeYaABssa5WUTzsyAAAAAElFTkSuQmCC&quot;) center center / 12px 3px; position: absolute; bottom: 0px; width: 12px; height: 3px; left: 50%;"></div><div class="jwborder jwtopleft" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAPklEQVR4XmMQFRVnBeIiIN4FxCeQMQOQU6ijq3/VycXjiau79zNkDJLcZWvv9MTGzumZta0jCgZJnkAXhPEBnhkmTDF7/FAAAAAASUVORK5CYII=&quot;) center center / 7px 4px; width: 7px; height: 4px; top: 0px; left: 0px;"></div><div class="jwborder jwbottomleft" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAMUlEQVR4AWMQFRU/YW3r+AwbBknusrSye4JLslBdQ/uqpbX9E2ySrEBcBMS7QVYgYwAWViWcql/T2AAAAABJRU5ErkJggg==&quot;) center center / 7px 4px; width: 7px; height: 4px; bottom: 3px; left: 0px;"></div><div class="jwborder jwtopright" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAPklEQVR42mMQFRU/gYZ3A3ERELMyuLp7P0PGTi4eT3R09a8CJbMYrG0dnyFjGzunZ7b2Tk+AkrswJGEYZAUA8XwmRnLnEVMAAAAASUVORK5CYII=&quot;) center center / 7px 4px; width: 7px; height: 4px; top: 0px; right: 0px;"></div><div class="jwborder jwbottomright" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAANUlEQVR42mOwtnV8hg2LioqfYMAmYWll9wQouQtD0tLa/om6hvZVoGQ2A0g7Gt4NxEVAzAoAZzolltlSH50AAAAASUVORK5CYII=&quot;) center center / 7px 4px; width: 7px; height: 4px; bottom: 3px; right: 0px;"></div><div class="jwborder jwleft" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAACCAYAAACUn8ZgAAAAFklEQVR42mMQFRU/YW3r+AwbZsAnCQBUPRWHq8l/fAAAAABJRU5ErkJggg==&quot;) center center / 7px 2px; width: 7px; left: 0px;"></div><div class="jwborder jwright" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAACCAYAAACUn8ZgAAAAFklEQVR42mOwtnV8hg2LioqfYMAnCQBwXRWHw2Rr1wAAAABJRU5ErkJggg==&quot;) center center / 7px 2px; width: 7px; right: 0px;"></div><div class="jwborder jwtop" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAHUlEQVR42mMUFRU/wUACYHR1935GkgZrW0faagAAqHQGCWgiU9QAAAAASUVORK5CYII=&quot;) center center / 12px 4px; height: 4px; top: 0px;"></div><div class="jwborder jwbottom" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAGElEQVR42mOwtnV8RgpmoL0GUVHxE6RgAO7IRsl4Cw8cAAAAAElFTkSuQmCC&quot;) center center / 12px 4px; height: 4px; bottom: 3px;"></div><div class="jwback" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEUlEQVR4AWOwtnV8RgomWQMAWvcm6W7AcF8AAAAASUVORK5CYII=&quot;) center center / 12px 2px; left: 7px; right: 7px; top: 4px; bottom: 7px;"></div><div class="jwcontents"><div class="jwmenu" id="video_controlbar_cc"></div></div></div></span><span class="jwmute jwtoggling" style=""><span class="jwblankDivider"></span><span><button tabindex="-1">&nbsp;</button></span><div class="jwoverlay" id="video_controlbar_volumeoverlay" style="padding: 5px 7px 8px; left: 50%; display: block;"><div class="jwarrow" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAYAAACnI+4yAAAAEklEQVR42mP4//8/AymYgeYaABssa5WUTzsyAAAAAElFTkSuQmCC&quot;) center center / 12px 3px; position: absolute; bottom: 0px; width: 12px; height: 3px; left: 50%;"></div><div class="jwborder jwtopleft" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAPklEQVR4XmMQFRVnBeIiIN4FxCeQMQOQU6ijq3/VycXjiau79zNkDJLcZWvv9MTGzumZta0jCgZJnkAXhPEBnhkmTDF7/FAAAAAASUVORK5CYII=&quot;) center center / 7px 4px; width: 7px; height: 4px; top: 0px; left: 0px;"></div><div class="jwborder jwbottomleft" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAMUlEQVR4AWMQFRU/YW3r+AwbBknusrSye4JLslBdQ/uqpbX9E2ySrEBcBMS7QVYgYwAWViWcql/T2AAAAABJRU5ErkJggg==&quot;) center center / 7px 4px; width: 7px; height: 4px; bottom: 3px; left: 0px;"></div><div class="jwborder jwtopright" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAPklEQVR42mMQFRU/gYZ3A3ERELMyuLp7P0PGTi4eT3R09a8CJbMYrG0dnyFjGzunZ7b2Tk+AkrswJGEYZAUA8XwmRnLnEVMAAAAASUVORK5CYII=&quot;) center center / 7px 4px; width: 7px; height: 4px; top: 0px; right: 0px;"></div><div class="jwborder jwbottomright" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAANUlEQVR42mOwtnV8hg2LioqfYMAmYWll9wQouQtD0tLa/om6hvZVoGQ2A0g7Gt4NxEVAzAoAZzolltlSH50AAAAASUVORK5CYII=&quot;) center center / 7px 4px; width: 7px; height: 4px; bottom: 3px; right: 0px;"></div><div class="jwborder jwleft" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAACCAYAAACUn8ZgAAAAFklEQVR42mMQFRU/YW3r+AwbZsAnCQBUPRWHq8l/fAAAAABJRU5ErkJggg==&quot;) center center / 7px 2px; width: 7px; left: 0px;"></div><div class="jwborder jwright" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAACCAYAAACUn8ZgAAAAFklEQVR42mOwtnV8hg2LioqfYMAnCQBwXRWHw2Rr1wAAAABJRU5ErkJggg==&quot;) center center / 7px 2px; width: 7px; right: 0px;"></div><div class="jwborder jwtop" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAHUlEQVR42mMUFRU/wUACYHR1935GkgZrW0faagAAqHQGCWgiU9QAAAAASUVORK5CYII=&quot;) center center / 12px 4px; height: 4px; top: 0px;"></div><div class="jwborder jwbottom" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAGElEQVR42mOwtnV8RgpmoL0GUVHxE6RgAO7IRsl4Cw8cAAAAAElFTkSuQmCC&quot;) center center / 12px 4px; height: 4px; bottom: 3px;"></div><div class="jwback" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEUlEQVR4AWOwtnV8RgomWQMAWvcm6W7AcF8AAAAASUVORK5CYII=&quot;) center center / 12px 2px; left: 7px; right: 7px; top: 4px; bottom: 7px;"></div><div class="jwcontents"><span class="jwslider jwvolume jwvertical"><span class="jwvolumeCapTop">&nbsp;</span><span class="jwrail"><span class="jwrailgroup Rail"><span class="jwvolumeRailCapTop">&nbsp;</span><span class="jwvolumeRail">&nbsp;</span><span class="jwvolumeRailCapBottom jwcapBottom">&nbsp;</span></span><span class="jwrailgroup Progress" style="height: 90%; bottom: 0px;"><span class="jwvolumeProgressCapTop">&nbsp;</span><span class="jwvolumeProgress">&nbsp;</span><span class="jwvolumeProgressCapBottom jwcapBottom">&nbsp;</span><span class="jwvolumeThumb jwthumb" style="top: 0px;">&nbsp;</span></span></span><span class="jwvolumeCapBottom jwcapBottom">&nbsp;</span></span></div></div></span><span class="jwslider jwvolumeH jwhorizontal" style="display: none;"><span class="jwvolumeHCapLeft">&nbsp;</span><span class="jwrail"><span class="jwrailgroup Rail"><span class="jwvolumeHRailCapLeft">&nbsp;</span><span class="jwvolumeHRail">&nbsp;</span><span class="jwvolumeHRailCapRight jwcapRight">&nbsp;</span></span><span class="jwprogressOverflow" style="width: 90%; opacity: 1;"><span class="jwrailgroup Progress"><span class="jwvolumeHProgressCapLeft">&nbsp;</span><span class="jwvolumeHProgress">&nbsp;</span><span class="jwvolumeHProgressCapRight jwcapRight">&nbsp;</span></span></span></span><span class="jwvolumeHCapRight">&nbsp;</span></span><span class="jwcast jwbuttoncontainer" style="display: none;"><span class="jwblankDivider"></span><span><button tabindex="-1" class="off">&nbsp;</button></span></span><span class="jwfullscreen jwbuttoncontainer" style=""><span class="jwblankDivider"></span><span><button tabindex="-1">&nbsp;</button></span></span></span><span class="jwcapRight">&nbsp;</span></span></span><span class="jwinstream"></span></span><span class="jwaspect"></span><span class="jwplaylistcontainer"></span></div>
+
+                    <script src="/static/js/jwplayer.js"></script>
+                    <script>
+                                $(function () {
+                                    var player = jwplayer('video').setup({
+                                        file: 'http://www.liushouer.com/DataFile/Video/CLSATUB1215172909267.mp4',
+                                        provider: 'http',
+                                        autostart: true,
+                                        html5player: '/js/player/jwplayer.html5.js',
+                                        flashplayer: '/js/player/Player.swf',
+                                        height: '100%',
+                                        width: '100%',
+                                        startparam: 'start',
+                                        controls: true,
+                                        events: {
+                                            onPlay: function () { writeMehod(); },
+                                            onComplete: function () { writeMehod(); }
+                                        }
+                                    });
+                                    //日志写入事件
+                                    function writeMehod() {
+                                        var time = player.getPosition();
+                                        if (time == undefined)
+                                            time = 0;
+                                        time = parseInt(time);
+                                        var logId = $('#hdLogId').val();
+                                        var fileId = $("#hdFileId").val();
+                                        $.post("/member/playlog", { logId: logId, fileId: fileId, type: "special", position: time }, function (data) {
+                                            $('#hdLogId').val(data.Result);
+                                            timer = setInterval(function () { 
+                                                return (clearInterval(timer), void writeMehod())
+                                            }, 3e3)
+                                        });
+
+                                    }
+                                    writeMehod();
+
+                                    $(".changeVideo").click(function () {
+                                        var _file = $(this).attr("data-file");
+
+                                        jwplayer("video").remove();
+
+                                        player = jwplayer('video').setup({
+                                            file: _file,
+                                            provider: 'http',
+                                            autostart: true,
+                                            html5player: '/js/player/jwplayer.html5.js',
+                                            flashplayer: '/js/player/Player.swf',
+                                            height: '100%',
+                                            width: '100%',
+                                            startparam: 'start',
+                                            controls: true
+                                        });
+                                    });
+
+                                });
+                                
+                    </script>
+
+                </div>
+                <div class="rightControl">
+                    
+                    <i class="btn storeBtn btnCollection " data-id="16008"></i>
+                </div>
+            </div>
+            <div class="box boxLink">
+                <div class="title"><i class="leaf"></i>剧集</div>
+                <ol class="dramaBox clearfix">
+                            <li data-file="http://www.liushouer.com/DataFile/Video/CLSATUB1215172909267.mp4" class="cur changeVideo">1</li>
+                </ol>
+            </div>
+            
+            <div class="box boxLink">
+                <div class="title"><i class="leaf"></i>简介</div>
+                <div class="descBox">
+                        <p class="desc">
+                            草原运动会
+                        </p>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="bottomBg"></div>
+    </div>
+    <div class="recommend">
+        <div class="title"><i class="icon-recommend"></i>为您推荐</div>
+        <ul class="list vList clearfix">
+                <li>
+                    <a href="http://www.liushouer.com/Media/Special/16006">
+                        <img class="img" src="/static/image/info/CLSATUB1215172909245.jpg">
+                        <span class="name">神秘的巫师</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.liushouer.com/Media/Special/14500">
+                        <img class="img" src="/static/image/info/20170826113109_09716.jpg">
+                        <span class="name">测试特色资源</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.liushouer.com/Media/Special/16011">
+                        <img class="img" src="/static/image/info/CLSATUB1219173819017.jpg">
+                        <span class="name">谁动了我的花</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.liushouer.com/Media/Special/16002">
+                        <img class="img" src="/static/image/info/CLSATUB1215172909172.jpg">
+                        <span class="name">小水滴的旅行日记</span>
+                    </a>
+                </li>
+        </ul>
+    </div>
+</div>
+<input type="hidden" id="hdLogId" value="0">
+<input type="hidden" id="hdFileId" value="222008">
+
+
+<!--确认框-->
+<div class="collectionSuccessBox popBox" id="divCollection">
+    <div class="recoverSuccessBody">
+        <i class="right"></i>
+        <p class="static"><span id="spCollection">操作成功</span>，<em class="blue">3</em>秒后关闭</p>
+    </div>
+    <i class="close"></i>
+</div>
+<script>
+    $(function () {
+        $("i.btnCollection").click(function () {
+            var e = $(this), id = $(e).attr("data-id");
+            
+            $.post("/member/AddCollection", { id: id }, function (data) {
+                if (data.Status < 0) {
+                    $(".loginBtn").click()
+                    return false;
+                }
+
+                $(".mask").show(), $("#divCollection").show()
+
+                $("#spCollection").html(data.Message);
+                
+                var s = setInterval(function () {
+                    var sec = parseInt($('.static .blue').html());
+                    if (sec <= 1) { sec = 4 };
+                    $('.static .blue').html(sec - 1);
+                }, 1000);
+                var o = setTimeout(function () {
+                    $("#divCollection").hide(); $(".mask").hide(); clearTimeout(o); clearTimeout(s);
+                }, 3000);
+             
+                if (data.Status > 0) {
+                    $(e).toggleClass("stored")
+                }
+            })
+        })
+    })
+
+</script>
+        <!--content end-->
+        <!--footer-->
+        
+<div id="footer">
+    <div class="friendLink">
+        <div class="inner">
+            <h3 class="linkTitle">友情链接</h3>
+            <ul class="linkList clearfix">
+                    <li><a href="http://www.ndcnc.gov.cn/" target="_blank" title="国家数字文化网">国家数字文化网</a></li>
+                    <li><a href="http://www.hljlib.org.cn/" target="_blank" title="黑龙江省图书馆">黑龙江省图书馆</a></li>
+                    <li><a href="http://www.hljwht.gov.cn/" target="_blank" title="黑龙江省文化厅">黑龙江省文化厅</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="inner clearfix">
+            <a class="help" href="http://www.liushouer.com/home/manual">使用帮助</a>
+            <a class="aboutUs" href="http://www.liushouer.com/home/aboutus">关于我们</a>
+            <span class="right">版权所有：黑龙江图书馆信息部</span>
+            <span class="totalVisit">总访问量:3396</span>
+        </div>
+    </div>
+</div>
+
+        <!--footer end-->
+        <div class="mask"></div>
+        <!--login start-->
+        <!--登录-->
+<div class="loginBox popBox">
+    <h2 class="title">欢迎登录</h2>
+    <div class="form">
+        <div class="single">
+            <div class="inpBox">
+                <i class="user"></i>
+                <input id="loginUser" class="val" type="text" placeholder="手机号">
+            </div><p class="errorTip"><i class="warn"></i>用户名错误</p>
+        </div>
+        <div class="single">
+            <div class="inpBox">
+                <i class="lock"></i>
+                <input id="loginPwd" class="val" type="password">
+            </div>
+            <p class="errorTip"><i class="warn"></i>用户名错误</p>
+        </div>
+        <div id="loginBtn" class="submitBtn">提交</div>
+        <div class="otherMethod">
+            <em class="forget">忘记密码?</em>
+            <em class="register">注册&gt;&gt;</em>
+        </div>
+    </div>
+    <i class="close"></i>
+</div>
+<!--注册-->
+<div class="registerBox popBox">
+    <h2 class="title">欢迎注册</h2>
+    <div class="form">
+        <div class="single">
+            <div class="inpBox">
+                <i class="user"></i>
+                <input id="regUser" class="val" type="text" placeholder="用户名">
+            </div>
+            <p class="errorTip"><i class="warn"></i>用户名错误</p>
+        </div>
+        <div class="single">
+            <div class="inpBox">
+                <i class="mobile"></i>
+                <input id="regMobile" class="val" type="text" placeholder="手机号">
+            </div>
+            <p class="errorTip"><i class="warn"></i>手机号错误</p>
+        </div>
+        <div class="single yzmBox">
+            <div class="doubleBox clearfix">
+                <div class="inpBox">
+                    <i class="lock"></i>
+                    <input id="refImgYzm" class="val" type="text" placeholder="请输入验证码">
+                </div>
+                <div id="regImgBtn"><img id="imgCode" src="/static/image/info/CreateImage" style="height:0.42rem;float:right" onclick="javascript:this.src =&#39;/Member/CreateImage?t=&#39;+Math.random()"></div>
+                <p class="errorTip"><i class="warn"></i>手机号错误</p>
+            </div>
+        </div>
+        <div class="single yzmBox">
+            <div class="doubleBox clearfix">
+                <div class="inpBox">
+                    <i class="lock"></i>
+                    <input id="refYzm" class="val" type="text" placeholder="请输入验证码">
+                </div>
+                <div class="yzmBtn" id="btnHasCode">获取动态验证码</div>
+            </div>
+            <p class="errorTip"></p>
+        </div>
+        <div class="single">
+            <div class="inpBox">
+                <i class="lock"></i>
+                <input id="regPwd" class="val" type="password" placeholder="设置密码">
+            </div>
+            <p class="errorTip"><i class="warn"></i>密码错误</p>
+        </div>
+        <div id="registerBtn" class="submitBtn">注册</div>
+    </div>
+    <i class="close"></i>
+</div>
+<!--注册成功-->
+<div class="registerSuccessBox popBox">
+    <h2 class="title"><i class="right"></i>恭喜您，注册成功</h2>
+    <div class="regSuccessBody">
+        <p class="static">宝宝所在年龄段是...</p>
+        <ul class="ageList" id="ulage">
+            <li class="cur" data-age="3-6"><a href="javascript:;">3-6岁的萌宝宝</a></li>
+            <li data-age="6-9"><a href="javascript:;">6-9岁的聪明宝宝</a></li>
+            <li data-age="9-12"><a href="javascript:;">9-12岁的努力宝宝</a></li>
+            <li data-age="12-15"><a href="javascript:;">12-15岁的大宝宝</a></li>
+        </ul>
+    </div>
+    <i class="close"></i>
+</div>
+<!--找回密码1-->
+<div class="recoverPwdBox1 popBox">
+    <h2 class="title">重置密码</h2>
+    <div class="form">
+        <p class="tip">仅支持手机号注册用户</p>
+        <div class="single">
+            <div class="inpBox">
+                <i class="mobile"></i>
+                <input id="recoverMobile" class="val" type="text" placeholder="手机号">
+            </div>
+            <p class="errorTip"><i class="warn"></i>手机号错误</p>
+        </div>
+        <div class="single yzmBox">
+            <div class="doubleBox clearfix">
+                <div class="inpBox">
+                    <i class="lock"></i>
+                    <input id="recoverImgYzm" class="val" type="text" placeholder="请输入图片验证码">
+                </div>
+                <div><img src="/static/image/info/CreateImage2" style="height:0.42rem;float:right" onclick="javascript:this.src =&#39;/Member/CreateImage2?t=&#39;+Math.random()"></div>
+                <p class="errorTip"><i class="warn"></i>手机号错误</p>
+            </div>
+        </div>
+        <div class="single yzmBox">
+            <div class="doubleBox clearfix">
+                <div class="inpBox">
+                    <i class="lock"></i>
+                    <input id="recoverYzm" class="val" type="text" placeholder="请输入验证码">
+                </div>
+                <div class="yzmBtn" id="btnHasCode2">获取动态验证码</div>
+            </div>
+            <p class="errorTip"><i class="warn"></i>手机验证码有误</p>
+        </div>
+        <div id="btnRecoverPwd" class="submitBtn">立即找回</div>
+    </div>
+    <i class="close"></i>
+</div>
+<!--找回密码2-->
+<div class="recoverPwdBox2 popBox">
+    <h2 class="title">重置密码</h2>
+    <div class="form">
+        <p class="tip">仅支持手机号注册用户</p>
+        <div class="single">
+            <div class="inpBox">
+                <i class="lock"></i>
+                <input id="recoverPwd1" class="val" type="password" placeholder="输入6-20位新密码">
+            </div>
+            <p class="errorTip"><i class="warn"></i>请输入6-20位新密码</p>
+        </div>
+        <div class="single">
+            <div class="inpBox">
+                <i class="lock"></i>
+                <input id="recoverPwd2" class="val" type="password" placeholder="确认6-20位新密码">
+            </div>
+            <p class="errorTip"><i class="warn"></i>两次输入的密码不一致</p>
+        </div>
+        <div id="setPwdBtn" class="submitBtn">完成</div>
+    </div>
+    <i class="close"></i>
+</div>
+<!--找回密码成功-->
+<div class="recoverSuccessBox popBox">
+    <div class="recoverSuccessBody">
+        <i class="right"></i>
+        <p class="static">密码已重置，<em class="blue">3</em>秒后，请重新登录</p>
+    </div>
+    <i class="close"></i>
+</div>
+<!--登录成功-->
+<div class="loginSuccessBox popBox">
+    <div class="recoverSuccessBody">
+        <i class="right"></i>
+        <p class="static">登录成功，<em class="blue">3</em>秒后关闭</p>
+    </div>
+    <i class="close"></i>
+</div>
+<script>
+
+    $(function () {
+        function o(o, e) {
+            timer = setInterval(function () {
+                return 0 >= e ? (clearInterval(timer), void o.removeClass("disabled").text("重新获取")) : void o.addClass("disabled").text("重新获取(" + e-- + "S)")
+            }, 1e3)
+        }
+        function e(o) { var e = /^1[3,4,5,7,8,9][0-9]{9}$/; return e.test(o) ? !0 : void 0 }
+        function e1(o) { var e = /^\w{6,20}/; return e.test(o) ? !0 : void 0 }
+        function c(e, t) { t == 1 ? e.closest(".single").removeClass("error").find(".errorTip").html("") : e.closest(".single").addClass("error").find(".errorTip").html(t); }
+        $("#btnHasCode").on("click", function () {//手机短信
+
+            var n = $("#btnHasCode"), s = $("#regMobile"), i = s.val(), c = $("#refImgYzm"), d = c.val();
+            var chk = d ? i ? e(i) ? (s.closest(".single").removeClass("error").find(".errorTip").html(""), c.closest(".single").removeClass("error").find(".errorTip").html(""), true) :
+               (c.closest(".single").removeClass("error").find(".errorTip").html(""), void s.closest(".single").addClass("error").find(".errorTip").html("手机号格式错误")) :
+               (c.closest(".single").removeClass("error").find(".errorTip").html(""), void s.closest(".single").addClass("error").find(".errorTip").html("手机号不能为空")) :
+                (s.closest(".single").removeClass("error").find(".errorTip").html(""), void c.closest(".single").addClass("error").find(".errorTip").html("请输入图片验证码"));
+            if (chk) {
+                $.ajax({
+                    url: "/Member/SendCode",
+                    type: "post",
+                    data: { mobile: i, imgCode: d },
+                    success: function (data) {
+                        if (data.Status < 0) {
+                            $("#refImgYzm").closest(".single").addClass("error").find(".errorTip").html(data.Message)
+                        }
+                        else {
+                            o(n, 60);
+                        }
+                    }
+                });
+            }
+        }),
+        $("#btnHasCode2").on("click", function () {//手机短信
+
+            var n = $("#btnHasCode2"), m = $("#recoverMobile"), mv = m.val(), i = $("#recoverImgYzm"), iv = i.val();
+            var chk = iv ? mv ? e(mv) ? (c(m, 1), c(i, 1),  true) :
+               (c(i, 1), void c(m, "手机号格式错误")) :
+               (c(i, 1), void c(m, "手机号不能为空")) :
+                (c(m, 1), void c(i, "请输入图片验证码"));
+            if (chk) {
+                $.ajax({
+                    url: "/Member/SendCode",
+                    type: "post",
+                    data: { mobile:mv, imgCode: iv, type: 2 },
+                    success: function (data) {
+                        if (data.Status < 0) {
+                            c(m, 1), void c(i, data.Message);
+                        }
+                        else {
+                            o(n, 60);
+                        }
+                    }
+                });
+            }
+        }),
+        $("#registerBtn").on("click", function () {//注册
+            var u = $("#regUser"), uv = u.val(), m = $("#regMobile"), mv = m.val(),
+                i = $("#refImgYzm"), iv = i.val(), c = $("#refYzm"), cv = c.val(),
+                p = $("#regPwd"), pv = p.val();
+            var chk = uv ? mv ? iv ? cv ? pv ? e(mv)? e1(pv) ? true :
+                void p.closest(".single").addClass("error").find(".errorTip").html("请输入6-20位密码") :
+                void m.closest(".single").addClass("error").find(".errorTip").html("手机号格式错误") :
+                void p.closest(".single").addClass("error").find(".errorTip").html("请输入密码") :
+                void c.closest(".single").addClass("error").find(".errorTip").html("请输入验证码") :
+            void i.closest(".single").addClass("error").find(".errorTip").html("请输入图片验证码") :
+            void m.closest(".single").addClass("error").find(".errorTip").html("手机号不能为空") :
+            void u.closest(".single").addClass("error").find(".errorTip").html("用户名不能为空");
+            if (!(chk && chk === true))
+                return false;
+
+            $.post("/Member/DoRegister", {
+                NickName: uv,
+                Mobile: mv,
+                Password: pv,
+                LoginName: cv,
+                imgCode: iv
+            }, function (data) {
+                if (data.Status > 0) {
+                    chkLogin();
+                    $('.registerBox').hide(), $(".registerSuccessBox").show();
+                }
+                else {
+                    p.closest(".single").addClass("error").find(".errorTip").html(data.Message)
+                }
+            });
+        }),
+        $("#loginBtn").on("click", function () {//登录
+            var u = $("#loginUser"), uv = u.val(),
+               p = $("#loginPwd"), pv = p.val();
+            var chk = uv ? pv ? true :
+               (c(u, 1), void c(p, "请输入密码")) :
+               (c(p, 1), void c(u, "请输入用户名"));
+            if (chk) {
+                $.post("/Member/DoLogin", { name: uv, pwd: pv },
+                    function (data) {
+                        c(u, 1), c(p, 1)
+                        if (data.Status > 0) {
+                            chkLogin();
+                            $('.loginBox').hide(), $(".loginSuccessBox").show();
+                            var s = setInterval(function () {
+                                var sec = parseInt($('.static .blue').html());
+                                if (sec <= 1) { sec = 4 };
+                                $('.static .blue').html(sec - 1);
+                            }, 1000);
+                            var o = setTimeout(function () {
+                                $(".mask").hide(), $(".loginSuccessBox").hide(), clearTimeout(o),clearTimeout(s)
+                            }, 3e3)
+                        }
+                        else {
+                            c(p, data.Message);
+                        }
+                    });
+            }
+        }),
+        $("#ulage li").on("click", function () {//登录
+            var age = $(this).attr("data-age");
+            $.post("/Member/UptAge", { age: age },
+                function (data) {
+                    if (data.Status > 0) {
+                        var o = setTimeout(function () {
+                            $(".mask").hide(), $(".registerSuccessBox").hide(), clearTimeout(o)
+                        }, 3e3)
+                    }
+                });
+        }),
+        $("#btnRecoverPwd").on("click", function () {//找回密码
+            var m = $("#recoverMobile"), mv = m.val(),
+                i = $("#recoverImgYzm"), iv = i.val(), y = $("#recoverYzm"), yv = y.val();
+            var chk = mv ? iv ? yv ? e(mv) ? true :
+                (c(i, 1), c(y, 1), void c(m, "手机号格式错误")) :
+                (c(m, 1), c(i, 1), void c(y, "请输入手机验证码")) :
+                (c(m, 1), c(y, 1), void c(i, "请输入图片验证码")) :
+                (c(i, 1), c(y, 1), void c(m, "手机号不能为空"));
+            if (!(chk && chk === true))
+                return false;
+
+            $.post("/Member/DoForgot", {
+                Mobile: mv,
+                LoginName: yv,
+                imgCode: iv
+            }, function (data) {
+                if (data.Status > 0) {
+                    chkLogin();
+                    $('.recoverPwdBox1').hide(), $(".recoverPwdBox2").show();
+                }
+                else {
+                    c(m, 1), c(i, 1), c(y, data.Message);
+                }
+            });
+        }),
+        $("#setPwdBtn").on("click", function () {//找回密码2
+            var m = $("#recoverMobile"), mv = m.val(),
+                i = $("#recoverImgYzm"), iv = i.val(), y = $("#recoverYzm"), yv = y.val(),
+                p = $("#recoverPwd1"), pv = p.val(), p1 = $("#recoverPwd2"), pv1 = p1.val();
+            var chk = pv ? (pv == pv1) ?  e1(pv)  ? true :
+                (c(p1, 1), void c(p, "请输入6-20位新密码")) :
+               (c(p, 1), void c(p1, "两次输入的密码不一致")) :
+                (c(p1, 1), void c(p, "请输入6-20位新密码"));
+            if (!(chk && chk === true))
+                return false;
+
+            $.post("/Member/DoForgot", {
+                Mobile: mv,
+                LoginName: yv,
+                Password:pv,
+                imgCode: iv
+            }, function (data) {
+                if (data.Status > 0) {
+                    chkLogin();
+                    $('.recoverPwdBox2').hide(), $(".recoverSuccessBox").show();
+                    var o = setTimeout(function () {
+                        $(".recoverSuccessBox").hide(), $(".loginBox").show(), clearTimeout(o)
+                    }, 3e3)
+                }
+                else {
+                    (c(p1, 1), void c(p, data.Message)); 
+                }
+            });
+        })
+    })
+</script>
+        <!--login end-->
+    </div>
+
+
+
+
+     
+    <script src="/static/js/video.min.js"></script>
+<script>
+    function back() {
+        if (window.history.length > 1)
+            window.history.go(-1);
+        else
+            window.location.href = "/home/index";
+    }
+</script>
+
+<script>
+    $(function () {
+        var o = 0;
+        window.setInterval(function () {
+            $.ajax({
+                url: "/home/visit",
+                data: { id: o, u: window.location.href },
+                success: function (data) {
+                    o = data;
+                }
+            });
+        }, 3e3);
+    })
+    
+    
+</script>
+
+
+
+
+</body></html>
