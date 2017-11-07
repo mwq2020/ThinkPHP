@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*本页导航*/
+#navSub{background:url(/static/image/index/img.png) no-repeat;}
+#navSub li{padding:0 16px;}
+
+/*本页布局*/
+.mod1{width:710px; margin-right:0;}
+.mod11{width:345px;}
+.con div.mod11{width:340px;}
+.mod2{width:250px; margin-right:0;}
+
+/*本页焦点图*/
+#play{width:320px; height:320px;}
+#play img{width:320px; height:320px;}
+
+/*本页块修饰*/
+.mod1 div.box{width:345px; margin:0 10px 10px 0; float:left; height:270px; border:none; padding:0;}
+.mod1 div.bsA{width:700px;}
+
+/*本页标题栏*/
+.mod1 div.tit{background:url(/static/image/index/img.png) 0 -90px; border-bottom:none; height:31px; margin-bottom:15px;}
+.mod1 div.tit h2{width:102px; padding-top:3px; text-align:center;}
+.mod1 div.tit div a{color:#c266a3;}
+.mod1 div.tit div a:hover{color:#906;}
+.mod1 div.tit h2,.reCon1 div.tit1A h2{color:#906;}
+
+/*本页内容*/
+.mod1 p a{color:#f63;} 
+.mod1 div.con h4,.mod1 div.con p{clear:none; text-align:left;}
+.mod1 div.con h4{font-size:14px; text-indent:0;}
+.mod1 div.con ul{margin:0 0 10px 0;}
+.mod1 div.con li{line-height:25px; font-size:14px; border-bottom:1px dashed #ddd; background:url(/static/image/index/li_01.png) no-repeat left; text-indent:14px;}
+.mod1 div.con li span,.mod6 div.con li span a{color:#888; font-size:12px;}
+.mod1 div.con li span{padding-right:6px;}
+
+/*本页选项卡*/
+.reCon1{padding-right:10px; margin-bottom:10px; height:305px; overflow:hidden;}
+.reCon1 div.con ul{clear:none;}
+.reCon1 div.con li{line-height:25px; font-size:14px;}
+.reCon1 div.con ul{clear:none;}
+.reCon1 div.con li{line-height:25px; font-size:14px;}
+.reCon1 div.tit1A{background:url(/static/image/index/tb.png) 0 -180px; margin-bottom:15px;}
+.reCon1 div.tit1A h5{width:80px; border-color:#ddd;}
+.reCon1 div.con img{float:left; border:none; padding:7px 9px 9px 7px; height:240px; width:320px; margin-right:20px; background:url(/static/image/index/hb.png) -270px 0 no-repeat; margin-bottom:10px; display:block;}
+.reCon1 div.tit1A h2{float:left; height:30px; width:100px; text-indent:-999px; background:url(/static/image/index/img.png) 0 -50px;}
+.reCon1 div.con h1 a,.reCon1 div.con h3 a{color:#906; font-size:18px;}
+.reCon1 div.con h1,.reCon1 div.con h3,.reCon1 div.con p{text-align:left; clear:none;}
+.reCon1 div.con p{font-size:14px; color:#666; line-height:23px; text-indent:28px;}
+
+/*本页广告*/
