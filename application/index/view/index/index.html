@@ -131,162 +131,31 @@ ul.ad2{display:none;}
             tab("reCon1","h5","div","tab","onmouseover"); 
             //-->
         </script>
+
+        <!-- 中间分类模块 -->
+        {volist name="cat_list" id="vo"}
         <div class="box">
             <div class="tit">
-                <h2>国粹京剧</h2>
-                <div><a href="http://www.ndcnc.gov.cn/juchang/jingju/">更多&gt;&gt;</a></div>
+                <h2>{$vo.cat_name}</h2>
+                <div><a href="/index/video/cate?cat_id={$vo.id}">更多&gt;&gt;</a></div>
             </div>
             <div class="con">
                 <ul>
-                       
-                        <li class="ls2">
-                            <h3><a href="http://www.ndcnc.gov.cn/juchang/jingju/201710/t20171031_1362505.htm" target="_blank">玉堂春（二）</a></h3>
-                            <a href="http://www.ndcnc.gov.cn/juchang/jingju/201710/t20171031_1362505.htm" title="玉堂春（二）" target="_blank"><img alt="玉堂春（二）" src="/static/image/index/W020171031552064182243.jpg"></a>
-                            <p>《玉堂春》不仅是京剧旦角的开蒙戏，还是中国戏曲中流传最广的剧目之一。 <a href="http://www.ndcnc.gov.cn/juchang/jingju/201710/t20171031_1362505.htm" target="_blank">[详细]</a></p>
-                        </li>
-                    
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/jingju/201710/t20171010_1359422.htm" target="_blank">玉堂春（一）</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/jingju/201709/t20170926_1358200.htm" target="_blank">英雄义——王立军</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/jingju/201709/t20170918_1357158.htm" target="_blank">一代贤后</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/jingju/201709/t20170911_1356352.htm" target="_blank">荀灌娘——玉堂春（监会）</a></li>
-                    
+                    <li class="ls2">
+                        <a href="/index/video/info?id={$vo.id}" title="玉堂春（二）" target="_blank">
+                            <img alt="玉堂春（二）" src="/static/image/index/W020171031552064182243.jpg">
+                        </a>
+                    </li>
+                    <li class="ls2">
+                        <a href="http://www.ndcnc.gov.cn/juchang/jingju/201710/t20171031_1362505.htm" title="玉堂春（二）" target="_blank">
+                            <img alt="玉堂春（二）" src="/static/image/index/W020171031552064182243.jpg">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="box">
-            <div class="tit">
-                <h2>地方剧种</h2>
-                <div><a href="http://www.ndcnc.gov.cn/juchang/difang/">更多&gt;&gt;</a></div>
-            </div>
-            <div class="con">
-                <ul>
-                       
-                        <li class="ls2">
-                            <h3><a href="http://www.ndcnc.gov.cn/juchang/difang/201710/t20171031_1362501.htm" target="_blank">喜姑娘上轿</a></h3>
-                            <a href="http://www.ndcnc.gov.cn/juchang/difang/201710/t20171031_1362501.htm" title="喜姑娘上轿" target="_blank"><img alt="喜姑娘上轿" src="/static/image/index/W020171031550482494637.jpg"></a>
-                            <p>河南省参加全国第十五届“群星奖”评比作品。<a href="http://www.ndcnc.gov.cn/juchang/difang/201710/t20171031_1362501.htm" target="_blank">[详细]</a></p>
-                        </li>
-                    
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/difang/201710/t20171010_1359416.htm" target="_blank">三进金寨</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/difang/201709/t20170926_1358195.htm" target="_blank">农家情</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/difang/201709/t20170918_1357154.htm" target="_blank">棉乡情</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/difang/201709/t20170911_1356351.htm" target="_blank">剪彩</a></li>
-                    
-                </ul>
-            </div>
-        </div>
-        <div class="box">
-            <div class="tit">
-                <h2>精品话剧</h2>
-                <div><a href="http://www.ndcnc.gov.cn/juchang/huaju/">更多&gt;&gt;</a></div>
-            </div>
-            <div class="con">
-                <ul>
-                       
-                        <li class="ls2">
-                            <h3><a href="http://www.ndcnc.gov.cn/juchang/huaju/201612/t20161208_1280641.htm" target="_blank">在错误中长大</a></h3>
-                            <a href="http://www.ndcnc.gov.cn/juchang/huaju/201612/t20161208_1280641.htm" title="在错误中长大" target="_blank"><img alt="在错误中长大" src="/static/image/index/W020161208551155081443.jpg"></a>
-                            <p>在这些错误当中，最使我难忘的一次最促使我长大。<a href="http://www.ndcnc.gov.cn/juchang/huaju/201612/t20161208_1280641.htm" target="_blank">[详细]</a></p>
-                        </li>
-                    
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/huaju/201611/t20161115_1273939.htm" target="_blank">玩偶之家（二）</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/huaju/201611/t20161108_1271739.htm" target="_blank">玩偶之家（一）</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/huaju/201611/t20161101_1269481.htm" target="_blank">承诺</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/huaju/201609/t20160906_1254444.htm" target="_blank">二堂舍子</a></li>
-                    
-                </ul>
-            </div>
-        </div>
-        <div class="box">
-            <div class="tit">
-                <h2>歌剧舞剧</h2>
-                <div><a href="http://www.ndcnc.gov.cn/juchang/gewu/">更多&gt;&gt;</a></div>
-            </div>
-            <div class="con">
-                <ul>
-                       
-                        <li class="ls2">
-                            <h3><a href="http://www.ndcnc.gov.cn/juchang/gewu/201710/t20171031_1362506.htm" target="_blank">麒麟庆盛世</a></h3>
-                            <a href="http://www.ndcnc.gov.cn/juchang/gewu/201710/t20171031_1362506.htm" title="麒麟庆盛世" target="_blank"><img alt="麒麟庆盛世" src="/static/image/index/W020171031555602578851.jpg"></a>
-                            <p>广州市南沙区文化馆大井麒麟队。<a href="http://www.ndcnc.gov.cn/juchang/gewu/201710/t20171031_1362506.htm" target="_blank">[详细]</a></p>
-                        </li>
-                    
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/gewu/201710/t20171010_1359426.htm" target="_blank">泸州雨坛彩龙</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/gewu/201709/t20170926_1358202.htm" target="_blank">鼓舞太平</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/gewu/201709/t20170918_1357161.htm" target="_blank">唱支山歌给党听</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/gewu/201709/t20170911_1356353.htm" target="_blank">背水</a></li>
-                    
-                </ul>
-            </div>
-        </div>
-        <div class="box">
-            <div class="tit">
-                <h2>综艺汇演</h2>
-                <div><a href="http://www.ndcnc.gov.cn/juchang/zongyi/">更多&gt;&gt;</a></div>
-            </div>
-            <div class="con">
-                <ul>
-                       
-                        <li class="ls2">
-                            <h3><a href="http://www.ndcnc.gov.cn/juchang/zongyi/201704/t20170424_1322049.htm" target="_blank">政协是咱兜</a></h3>
-                            <a href="http://www.ndcnc.gov.cn/juchang/zongyi/201704/t20170424_1322049.htm" title="政协是咱兜" target="_blank"><img alt="政协是咱兜" src="/static/image/index/W020170424526415811541.png"></a>
-                            <p>漳州锦歌作为闽南最古老的民间曲艺之一有着悠久的历史，是我省五大曲种之一。<a href="http://www.ndcnc.gov.cn/juchang/zongyi/201704/t20170424_1322049.htm" target="_blank">[详细]</a></p>
-                        </li>
-                    
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/zongyi/201704/t20170417_1320082.htm" target="_blank">迎亲路上</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/zongyi/201704/t20170413_1319256.htm" target="_blank">贤媳妇</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/zongyi/201704/t20170407_1317514.htm" target="_blank">西关食通天</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/zongyi/201703/t20170327_1314012.htm" target="_blank">温馨的港湾</a></li>
-                    
-                </ul>
-            </div>
-        </div>
-        <div class="box">
-            <div class="tit">
-                <h2>相声小品</h2>
-                <div><a href="http://www.ndcnc.gov.cn/juchang/xiangsheng/">更多&gt;&gt;</a></div>
-            </div>
-            <div class="con">
-                <ul>
-                       
-                        <li class="ls2">
-                            <h3><a href="http://www.ndcnc.gov.cn/juchang/xiangsheng/201710/t20171031_1362510.htm" target="_blank">选角色</a></h3>
-                            <a href="http://www.ndcnc.gov.cn/juchang/xiangsheng/201710/t20171031_1362510.htm" title="选角色" target="_blank"><img alt="选角色" src="/static/image/index/W020171031558771251757.jpg"></a>
-                            <p>《选角色》江西省南昌县文化馆选送。<a href="http://www.ndcnc.gov.cn/juchang/xiangsheng/201710/t20171031_1362510.htm" target="_blank">[详细]</a></p>
-                        </li>
-                    
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/xiangsheng/201710/t20171010_1359427.htm" target="_blank">阳光总在风雨后</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/xiangsheng/201709/t20170926_1358207.htm" target="_blank">走出阿吾勒</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/xiangsheng/201709/t20170918_1357165.htm" target="_blank">中年如歌</a></li>
-                       
-                        <li><a href="http://www.ndcnc.gov.cn/juchang/xiangsheng/201709/t20170911_1356354.htm" target="_blank">政府门前</a></li>
-                    
-                </ul>
-            </div>
-        </div>
+        {/volist}
+
         <div class="box bsA">
             <div class="tit">
                 <h2>音乐会</h2>

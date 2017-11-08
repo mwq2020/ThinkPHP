@@ -8,7 +8,17 @@ class Index extends \think\Controller
 
     public function index()
     {
-        return $this->fetch();
+        $cat_list = Db::table('category')->select();
+
+        foreach($cat_list as &$row){
+            $row['video_list'] = Db::table('video_list')->where(['cat_id'=>$row['id']])->limit(0,2)->select();
+        }
+
+//        echo "<pre>";
+//        print_r($cat_list);
+//        exit;
+
+        return $this->fetch('index',['cat_list'=>$cat_list]);
     }
     
 
