@@ -64,9 +64,6 @@
         <!--content start-->
         
 
-
-
-
 <div id="listContent">
     <div class="topBg"></div>
     <div class="inner">
@@ -123,101 +120,23 @@
             <span class="result">共有<em class="total">12</em>条结果</span>
         </div>
         <ul class="list vList clearfix">
+            {volist name="video_list" id="vo"}
                 <li>
-                    <a href="http://www.liushouer.com/Media/special/14500">
-                          <img class="img" src="/static/image/cate/20170826113109_09716.jpg">
-                        <span class="name">测试特色资源</span>
+                    <a href="/index/video/info?id={$vo.id}">
+                          <img class="img" src="{$vo.face_img}">
+                        <span class="name">{$vo.title}</span>
                                                     <i class="videoBtn"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="http://www.liushouer.com/Media/special/16001">
-                          <img class="img" src="/static/image/cate/CLSATUB1219173819007.jpg">
-                        <span class="name">宠物评选会</span>
-                                                    <i class="videoBtn"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.liushouer.com/Media/special/16002">
-                          <img class="img" src="/static/image/cate/CLSATUB1215172909172.jpg">
-                        <span class="name">小水滴的旅行日记</span>
-                                                    <i class="videoBtn"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.liushouer.com/Media/special/16003">
-                          <img class="img" src="/static/image/cate/CLSATUB1215172909220.jpg">
-                        <span class="name">漂亮的小雪花</span>
-                                                    <i class="videoBtn"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.liushouer.com/Media/special/16004">
-                          <img class="img" src="/static/image/cate/CLSATUB1215172909237.jpg">
-                        <span class="name">田园好风光</span>
-                                                    <i class="videoBtn"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.liushouer.com/Media/special/16005">
-                          <img class="img" src="/static/image/cate/CLSATUB1219173426491.jpg">
-                        <span class="name">畅游海世界</span>
-                                                    <i class="videoBtn"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.liushouer.com/Media/special/16006">
-                          <img class="img" src="/static/image/cate/CLSATUB1215172909245.jpg">
-                        <span class="name">神秘的巫师</span>
-                                                    <i class="videoBtn"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.liushouer.com/Media/special/16007">
-                          <img class="img" src="/static/image/cate/CLSATUB1215172909247.jpg">
-                        <span class="name">种子的旅行</span>
-                                                    <i class="videoBtn"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.liushouer.com/Media/special/16008">
-                          <img class="img" src="/static/image/cate/CLSATUB1215172909267.jpg">
-                        <span class="name">草原运动会</span>
-                                                    <i class="videoBtn"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.liushouer.com/Media/special/16009">
-                          <img class="img" src="/static/image/cate/CLSATUB1215172909268.jpg">
-                        <span class="name">草地上的野餐</span>
-                                                    <i class="videoBtn"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.liushouer.com/Media/special/16010">
-                          <img class="img" src="/static/image/cate/CLSATUB1215172909269.jpg">
-                        <span class="name">蒲公英妈妈和她的孩子们</span>
-                                                    <i class="videoBtn"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.liushouer.com/Media/special/16011">
-                          <img class="img" src="/static/image/cate/CLSATUB1219173819017.jpg">
-                        <span class="name">谁动了我的花</span>
-                                                    <i class="videoBtn"></i>
-                    </a>
-                </li>
+            {/volist}
         </ul>
         
 
-<div class="page">
-            <span class="disabled">上一页</span>
-                    <a href="http://www.liushouer.com/home/List?type=special#" class="cur">1</a>
-            <span class="disabled">下一页</span>
-
-</div>
-
-
+    <div class="page">
+        <span class="disabled">上一页</span>
+            <a href="http://www.liushouer.com/home/List?type=special#" class="cur">1</a>
+        <span class="disabled">下一页</span>
+    </div>
 
     </div>
     <div class="bottomBg"></div>
