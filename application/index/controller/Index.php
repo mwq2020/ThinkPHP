@@ -14,11 +14,15 @@ class Index extends \think\Controller
             $row['video_list'] = Db::table('video_list')->where(['cat_id'=>$row['id']])->limit(0,2)->select();
         }
 
+        $ranking_list = Db::table('video_list')->order('view_num desc')->limit(0,10)->select();
+
 //        echo "<pre>";
-//        print_r($cat_list);
+//        print_r($ranking_list);
 //        exit;
 
-        return $this->fetch('index',['cat_list'=>$cat_list]);
+        $special_list = Db::table('video_list')->order('view_num desc')->limit(0,4)->select();
+
+        return $this->fetch('index',['cat_list'=>$cat_list,'ranking_list'=>$ranking_list,'special_list'=>$special_list]);
     }
     
 

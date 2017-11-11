@@ -92,7 +92,7 @@ div.con a:hover img{border-color:#aaa;}
 
 ul.txt1 li{line-height:25px; font-size:14px; text-indent:14px; background:url(/static/image/index/li_01.png) no-repeat left;}
 ul.txt1 li span{font-size:12px; color:#aaa; padding-left:12px;}
-ul.txt2 li{background:url(/static/image/index/li_03.png) no-repeat left; text-indent:12px; line-height:25px; border-bottom:1px dashed #ddd;}
+ul.txt2 li{background:url(/static/image/index/li_03.png) no-repeat left; line-height:25px; border-bottom:1px dashed #ddd;}
 ul.txt3 li{line-height:21px; font-size:12px; text-indent:12px; background:url(/static/image/index/li_01.png) no-repeat left;}
 
 ul.txt1 li.t1,ul.txt1 li.t2{height:79px; line-height:21px; overflow:hidden; padding-bottom:10px; margin-bottom:10px; border-bottom:1px dashed #ddd; background:none; text-indent:0;}
@@ -122,6 +122,10 @@ ul.tv1 li{background:url(/static/image/index/li_01.gif) no-repeat left; text-ind
 ul.wid1 li{float:left; clear:none; width:50%;}
 ul.wid2 li{float:left; clear:none; width:33%;}
 ul.wid3 li{float:left; clear:none; width:25%;}
+
+.mod11 li {
+    list-style-type: none;float:left;
+}
 
 /*右侧通用*/
 div.bs1{border:1px solid #8bd1d1; background:#f0fafa; margin-bottom:10px; height:363px;}
