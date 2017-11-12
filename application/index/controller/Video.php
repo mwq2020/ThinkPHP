@@ -30,12 +30,17 @@ class Video extends \think\Controller
     public function info()
     {
         $video_info = Db::table('video_list')->where(['id'=>$_REQUEST['id']])->find();
+        if($video_info){
+            $view_num = $video_info['view_num'] + 1;
+            Db::table('video_list')->where(['id'=>$video_info['id']])->update(['view_num'=>$view_num]);
+        }
+
         $cate_info = Db::table('category')->where(['id'=>$video_info['cat_id']])->find();
 
         $view_data = [];
         $view_data['video_info']      = $video_info;
         $view_data['cate_info']      = $cate_info;
-        
+
         return $this->fetch('info',$view_data);
     }
 }
