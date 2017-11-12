@@ -82,14 +82,14 @@ ul.ad2{display:none;}
 <div id="navSub">
     <h2><a title="精准扶贫综合视频" href="http://www.ndcnc.gov.cn/juchang/">精准扶贫综合视频</a></h2>
     <ul>
-        <li class="t1"><a href="http://www.ndcnc.gov.cn/juchang/">彩色儿童画</a></li>
-        <li class="t2"><a href="http://www.ndcnc.gov.cn/juchang/jingju/">儿童手工</a></li>
-        <li><a href="http://www.ndcnc.gov.cn/juchang/difang/">儿童书法</a></li>
-        <li><a href="http://www.ndcnc.gov.cn/juchang/huaju/">儿童舞蹈家</a></li>
-        <li><a href="http://www.ndcnc.gov.cn/juchang/gewu/">英雄榜样人物</a></li>
-        <li><a href="http://www.ndcnc.gov.cn/juchang/zongyi/">儿童安全常识</a></li>
-        <li><a href="http://www.ndcnc.gov.cn/juchang/xiangsheng/">儿童全脑开发</a></li>
-        <li><a href="http://www.ndcnc.gov.cn/juchang/yinyuehui/">留守儿童专辑</a></li>
+        <li class="t1"><a href="/index/video/cate?cat_id=1">彩色儿童画</a></li>
+        <li class="t2"><a href="/index/video/cate?cat_id=1">儿童手工</a></li>
+        <li><a href="/index/video/cate?cat_id=1">儿童书法</a></li>
+        <li><a href="/index/video/cate?cat_id=1">儿童舞蹈家</a></li>
+        <li><a href="/index/video/cate?cat_id=1">英雄榜样人物</a></li>
+        <li><a href="/index/video/cate?cat_id=1">儿童安全常识</a></li>
+        <li><a href="/index/video/cate?cat_id=1">儿童全脑开发</a></li>
+        <li><a href="/index/video/cate?cat_id=1">留守儿童专辑</a></li>
         <!-- <li><a href="http://www.ndcnc.gov.cn/juchang/yinyuehui/">多媒体课件</a></li> -->
     </ul>
 </div>
@@ -100,22 +100,17 @@ ul.ad2{display:none;}
             <div class="tit1A">
                 <h2>每月一荐</h2>
                 <div>
-                    <h5 class=" deodar up">资源介绍</h5>
+                    <h5 class=" deodar up">视频介绍</h5>
                 </div>
             </div>
             <div class="con deodar">
-                 
-                    <a href="http://www.ndcnc.gov.cn/juchang/difang/201710/t20171010_1359416.htm" title="三进金寨" target="_blank"><img alt="三进金寨" src="/static/image/index/W020171010394566951114.jpg"></a>
-                    <h1><a href="http://www.ndcnc.gov.cn/juchang/difang/201710/t20171010_1359416.htm" target="_blank">三进金寨</a></h1>
-                    <p>展现了精湛的黄梅大鼓说唱技艺，也体现了鲜明的时代教育特点。<a href="http://www.ndcnc.gov.cn/juchang/difang/201710/t20171010_1359416.htm" target="_blank">[详细]</a></p>
-                
+                    <a href="/index/video/info?id={$recommend.id}" title="{$recommend.title}" target="_blank">
+                        <img alt="{$recommend.title}" src="/static/image/index/W020171010394566951114.jpg">
+                    </a>
+                    <h1><a href="/index/video/info?id={$recommend.id}" target="_blank">{$recommend.title}</a></h1>
+                    <p>{$recommend.description}<a href="/index/video/info?id={$recommend.id}" target="_blank">[详细]</a></p>
             </div>
         </div>
-        <script type="text/javascript">
-            <!--
-            //tab("reCon1","h5","div","tab","onmouseover");
-            //-->
-        </script>
 
         <!-- 中间分类模块 -->
         {volist name="cat_list" id="vo"}
@@ -126,16 +121,13 @@ ul.ad2{display:none;}
             </div>
             <div class="con">
                 <ul>
+                    {volist name="vo.video_list" id="video"}
                     <li class="ls2">
-                        <a href="/index/video/info?id={$vo.id}" title="玉堂春（二）" target="_blank">
-                            <img alt="玉堂春（二）" src="/static/image/index/W020171031552064182243.jpg">
+                        <a href="/index/video/info?id={$video.id}" title="{$video.title}" target="_blank">
+                            <img alt="{$video.title}" src="/static/image/index/W020171031552064182243.jpg">
                         </a>
                     </li>
-                    <li class="ls2">
-                        <a href="http://www.ndcnc.gov.cn/juchang/jingju/201710/t20171031_1362505.htm" title="玉堂春（二）" target="_blank">
-                            <img alt="玉堂春（二）" src="/static/image/index/W020171031552064182243.jpg">
-                        </a>
-                    </li>
+                    {/volist}
                 </ul>
             </div>
         </div>
@@ -144,15 +136,15 @@ ul.ad2{display:none;}
         <div class="box bsA">
             <div class="tit">
                 <h2>音乐会</h2>
-                <div><a href="http://www.ndcnc.gov.cn/juchang/yinyuehui/">更多&gt;&gt;</a></div>
+                <div><a href="/index/video/cate?cat_id=1">更多&gt;&gt;</a></div>
             </div>
             <div class="con">
                 <div class="mod11">
                     <ul>
                         {volist name="special_list" id="vo"}
                         <li class="ls2">
-                            <a href="/index/vedio/info?id={$vo.id}" title="谁不说俺家乡好" target="_blank">
-                                <img alt="谁不说俺家乡好" src="/static/image/index/W020171031560640459943.jpg">
+                            <a href="/index/video/info?id={$vo.id}" title="{$vo.title}" target="_blank">
+                                <img alt="{$vo.title}" src="/static/image/index/W020171031560640459943.jpg">
                             </a>
                         </li>
                         {/volist}
@@ -165,14 +157,14 @@ ul.ad2{display:none;}
     <div class="box bs2">
         <div class="tit">
             <h2>资源推荐</h2>
-            <div><a href="http://www.ndcnc.gov.cn/ziyuan_1/">更多&gt;&gt;</a></div>
+            <div><a href="/index/video/cate?cat_id=1">更多&gt;&gt;</a></div>
         </div>
         <div class="con">
             <ul class="txt2">
                 {volist name="ranking_list" id="vo"}
                 <li>
-                    <a href="/index/vedio/info?id={$vo.id}" target="_blank">
-                        <img src="/static/image/index/W020171031552064182243.jpg" />
+                    <a href="/index/video/info?id={$vo.id}" title="{$vo.title}" target="_blank">
+                        <img src="/static/image/index/W020171031552064182243.jpg" alt="{$vo.title}"/>
                     </a>
                 </li>
                 {/volist}

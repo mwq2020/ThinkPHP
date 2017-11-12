@@ -6,6 +6,10 @@ use \think\Db;
 class Index extends \think\Controller
 {
 
+    /**
+     * 视频网站首页入口
+     * @return mixed
+     */
     public function index()
     {
         $cat_list = Db::table('category')->select();
@@ -15,14 +19,16 @@ class Index extends \think\Controller
         }
 
         $ranking_list = Db::table('video_list')->order('view_num desc')->limit(0,10)->select();
-
-//        echo "<pre>";
-//        print_r($ranking_list);
-//        exit;
-
         $special_list = Db::table('video_list')->order('view_num desc')->limit(0,4)->select();
+        $recommend = Db::table('video_list')->order('view_num desc')->find();
 
-        return $this->fetch('index',['cat_list'=>$cat_list,'ranking_list'=>$ranking_list,'special_list'=>$special_list]);
+        $view_data = [];
+        $view_data['cat_list']      = $cat_list;
+        $view_data['ranking_list']  = $ranking_list;
+        $view_data['special_list']  = $special_list;
+        $view_data['recommend']     = $recommend;
+
+        return $this->fetch('index',$view_data);
     }
     
 

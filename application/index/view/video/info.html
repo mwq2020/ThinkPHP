@@ -6,8 +6,6 @@
     <title>草原运动会|黑龙江留守儿童互助平台</title>
     <link rel="stylesheet" href="/static/css/detail.min.css">
     <script src="/static/js/jquery-1.11.1.min.js"></script>
-    <!--<script src="http://mwq.thinkphp.com/jwplayer/jwplayer.js"></script>-->
-    <!--<script>jwplayer.key="4sNBpozdkb2Gv+IYeWyd+CID9tW2NXdJE5GeSg==";</script>-->
     <script src="/jqueryVideo/js/video.min.js"></script>
     <link href="/jqueryVideo/css/video-js.css" rel="stylesheet">
 </head>
@@ -17,7 +15,7 @@
     
 <header id="header">
     <div class="inner">
-        <a class="logo" href="http://test.ximanfen.com/">
+        <a class="logo" href="/">
             <img src="/static/image/info/logo.png">
         </a>
             <div class="searchBox">
@@ -44,9 +42,14 @@
     <div class="ebookDetail">
         <div class="topBg"></div>
         <div class="inner">
-            <p class="crumb">当前位置：<em><a href="http://www.liushouer.com/">首页</a></em> ＞ <em><a href="http://www.liushouer.com/Home/List?type=special">特色课堂</a></em> ＞ <em class="cur">视频详情</em></p>
+            <p class="crumb">当前位置：<em><a href="/">首页</a></em> ＞
+                <em>
+                    <a href="/index/video/cate?cat_id={$cate_info.id}">{$cate_info.cat_name}</a>
+                </em> ＞
+                <em class="cur">视频详情</em>
+            </p>
             <a href="javascript:back();"><img class="back" src="/static/image/info/back.png"></a>
-            <h1 id="title">草原运动会<span class="scanNum">浏览次数：10</span></h1>
+            <h1 id="title">{$video_info.title}<span class="scanNum">浏览次数：{$video_info.view_num}</span></h1>
 
             <div class="box pr clearfix videoContainer">
                 
@@ -55,7 +58,6 @@
                            style="width: 100%; height: 100%; background-color: rgb(0, 0, 0);opacity:1"
                            width="740" height="400" poster="m.png" data-setup="{}">
                         <source src="/static/vedio/十万个为什么.mp4" type="video/mp4">
-                        <!--<source src="http://jq22com.qiniudn.com/jq22-sp.mp4" type="video/mp4">-->
                     </video>
                 </div>
 
@@ -66,80 +68,6 @@
                         myPlayer.play();
                     });
                 </script>
-
-                    <script type="text/javascript">
-                        /*
-                        jwplayer("video").setup({
-                            "file": "/jwplayer/jwplayer-30s.mp4",//视频文件路径
-                            "aspectratio": "16:9",//播放器自适应比例
-                            "height": "360",//播放器高度
-                            "type":"mp4",//播放文件类型（可选）
-                            "title": "测试标题",//标题（可选）
-                            "description": "测试视频描述",//描述（可选）
-                            "image": "http://ww4.sinaimg.cn/large/b6839357jw1e3val80tknj20dw099jsb.jpg",//视频封面（可选）
-                            "repeat":"true",//重复播放（留空则不重复播放）
-                            "autostart":"true",//自动播放（留空则不启用自动播放）
-                        });
-                        */
-                    </script>
-                    <script>
-                                /*
-                                $(function () {
-                                    var player = jwplayer('video').setup({
-                                        file: 'http://www.liushouer.com/DataFile/Video/CLSATUB1215172909267.mp4',
-                                        provider: 'http',
-                                        autostart: true,
-                                        html5player: '/js/player/jwplayer.html5.js',
-                                        flashplayer: '/js/player/Player.swf',
-                                        height: '100%',
-                                        width: '100%',
-                                        startparam: 'start',
-                                        controls: true,
-                                        events: {
-                                            onPlay: function () { writeMehod(); },
-                                            onComplete: function () { writeMehod(); }
-                                        }
-                                    });
-                                    //日志写入事件
-                                    function writeMehod() {
-                                        var time = player.getPosition();
-                                        if (time == undefined)
-                                            time = 0;
-                                        time = parseInt(time);
-                                        var logId = $('#hdLogId').val();
-                                        var fileId = $("#hdFileId").val();
-                                        $.post("/member/playlog", { logId: logId, fileId: fileId, type: "special", position: time }, function (data) {
-                                            $('#hdLogId').val(data.Result);
-                                            timer = setInterval(function () { 
-                                                return (clearInterval(timer), void writeMehod())
-                                            }, 3e3)
-                                        });
-
-                                    }
-                                    writeMehod();
-
-                                    $(".changeVideo").click(function () {
-                                        var _file = $(this).attr("data-file");
-
-                                        jwplayer("video").remove();
-
-                                        player = jwplayer('video').setup({
-                                            file: _file,
-                                            provider: 'http',
-                                            autostart: true,
-                                            html5player: '/js/player/jwplayer.html5.js',
-                                            flashplayer: '/js/player/Player.swf',
-                                            height: '100%',
-                                            width: '100%',
-                                            startparam: 'start',
-                                            controls: true
-                                        });
-                                    });
-
-                                });
-                                */
-                                
-                    </script>
 
                 </div>
                 <div class="rightControl">
@@ -157,7 +85,7 @@
                 <div class="title"><i class="leaf"></i>简介</div>
                 <div class="descBox">
                         <p class="desc">
-                            草原运动会
+                            {$video_info.description}
                         </p>
                 </div>
             </div>
@@ -166,48 +94,10 @@
         </div>
         <div class="bottomBg"></div>
     </div>
-    <div class="recommend">
-        <div class="title"><i class="icon-recommend"></i>为您推荐</div>
-        <ul class="list vList clearfix">
-                <li>
-                    <a href="http://www.liushouer.com/Media/Special/16006">
-                        <img class="img" src="/static/image/info/CLSATUB1215172909245.jpg">
-                        <span class="name">神秘的巫师</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.liushouer.com/Media/Special/14500">
-                        <img class="img" src="/static/image/info/20170826113109_09716.jpg">
-                        <span class="name">测试特色资源</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.liushouer.com/Media/Special/16011">
-                        <img class="img" src="/static/image/info/CLSATUB1219173819017.jpg">
-                        <span class="name">谁动了我的花</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.liushouer.com/Media/Special/16002">
-                        <img class="img" src="/static/image/info/CLSATUB1215172909172.jpg">
-                        <span class="name">小水滴的旅行日记</span>
-                    </a>
-                </li>
-        </ul>
-    </div>
 </div>
 <input type="hidden" id="hdLogId" value="0">
 <input type="hidden" id="hdFileId" value="222008">
 
-
-<!--确认框-->
-<div class="collectionSuccessBox popBox" id="divCollection">
-    <div class="recoverSuccessBody">
-        <i class="right"></i>
-        <p class="static"><span id="spCollection">操作成功</span>，<em class="blue">3</em>秒后关闭</p>
-    </div>
-    <i class="close"></i>
-</div>
         <!--content end-->
         <!--footer-->
         
@@ -259,7 +149,7 @@
         if (window.history.length > 1)
             window.history.go(-1);
         else
-            window.location.href = "/home/index";
+            window.location.href = "/";
     }
 </script>
 
