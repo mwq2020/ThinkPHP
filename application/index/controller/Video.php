@@ -15,10 +15,25 @@ class Video extends \think\Controller
      */
     public function cate()
     {
-        $video_list = Db::table('video_list')->where(['cat_id'=>$_REQUEST['cat_id']])->page('1,10')->select();
+        $cate_id = isset($_REQUEST['cat_id']) && $_REQUEST['cat_id'] > 0 ? intval($_REQUEST['cat_id']) : 1;
+        $sort = isset($_REQUEST['sort']) && in_array($_REQUEST['sort'],array('new','view_num')) ? trim($_REQUEST['sort']) : 'new';
+        $db = Db::table('video_list')->where(['cat_id' => $cate_id]);
+        if($sort == 'new'){
+            $db->order('add_time desc');
+        } else {
+            $db->order('view_num desc');
+        }
+
+        $video_list = $db->paginate(12);
+
+        $page = $video_list->render();
 
         $view_data = [];
-        $view_data['video_list']      = $video_list;
+        $view_data['video_list'] = $video_list;
+        $view_data['page']      = $page;
+        $view_data['total']      = $video_list->total;
+//        echo "<pre>";
+//        print_r($view_data);exit;
 
         return $this->fetch('cate',$view_data);
     }

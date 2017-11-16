@@ -33,7 +33,6 @@ abstract class Paginator implements ArrayAccess, Countable, IteratorAggregate, J
     protected $lastPage;
 
     /** @var integer|null 数据总数 */
-    protected $total;
 
     /** @var  integer 每页的数量 */
     protected $listRows;

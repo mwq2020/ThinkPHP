@@ -1,23 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<!-- saved from url=(0047)http://www.liushouer.com/home/List?type=special -->
 <html style="font-size:75px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
     <title>特色课堂|黑龙江留守儿童互助平台</title>
-    
     <link rel="stylesheet" href="/static/css/list.min.css">
-
     <script src="/static/js/jquery-1.11.1.min.js"></script>
 </head>
 
 <body style="">
-    <div id="pageContent">
-        
-
-<header id="header">
-    <div class="inner">
-        <a class="logo" href="http://test.ximanfen.com/">
-            <img src="/static/image/cate/logo.png">
-        </a>
+<div id="pageContent">
+    <header id="header">
+        <div class="inner">
+            <a class="logo" href="http://test.ximanfen.com/">
+                <img src="/static/image/cate/logo.png">
+            </a>
             <div class="searchBox">
                 <div class="search">
                     <div class="category">
@@ -34,119 +28,104 @@
                     <li>特色视频</li>
                 </ul>
             </div>
-    </div>
-</header>
-
-
-<div id="listContent">
-    <div class="topBg"></div>
-    <div class="inner">
-        <p class="crumb">当前位置：<em>首页</em> ＞ <em class="cur">特色课堂</em></p>
-        <div class="conditions">
-            <div class="single clearfix">
-                <i class="icon-people"></i>
-                <em class="key">年龄</em>
-                <div class="conList clearfix">
-                    <a class="cur" href="http://www.liushouer.com/home/List?type=special&amp;age=all&amp;interest=all&amp;cate=all&amp;sort=new">全部</a>
-                        <a href="http://www.liushouer.com/home/List?type=special&amp;age=0-3&amp;interest=all&amp;cate=all&amp;sort=new">0-3岁</a>
-                        <a href="http://www.liushouer.com/home/List?type=special&amp;age=12-15&amp;interest=all&amp;cate=all&amp;sort=new">12-15岁</a>
-                        <a href="http://www.liushouer.com/home/List?type=special&amp;age=3-6&amp;interest=all&amp;cate=all&amp;sort=new">3-6岁</a>
-                        <a href="http://www.liushouer.com/home/List?type=special&amp;age=6-9&amp;interest=all&amp;cate=all&amp;sort=new">6-9岁</a>
-                        <a href="http://www.liushouer.com/home/List?type=special&amp;age=9-12&amp;interest=all&amp;cate=all&amp;sort=new">9-12岁</a>
-                </div>
-            </div>
-            <div class="single clearfix">
-                <i class="icon-star"></i>
-                <em class="key">兴趣</em>
-                <div class="conList clearfix">
-                    <a class="cur" href="http://www.liushouer.com/home/List?type=special&amp;age=all&amp;interest=all&amp;cate=all&amp;sort=new">全部</a>
-                        <a href="http://www.liushouer.com/home/List?type=special&amp;age=all&amp;interest=shenghuo&amp;cate=all&amp;sort=new">生活常识</a>
-                        <a href="http://www.liushouer.com/home/List?type=special&amp;age=all&amp;interest=yishu&amp;cate=all&amp;sort=new">艺术培养</a>
-                        <a href="http://www.liushouer.com/home/List?type=special&amp;age=all&amp;interest=yizhi&amp;cate=all&amp;sort=new">益智百科</a>
-                </div>
-            </div>
-            <div class="single clearfix">
-                <i class="icon-more"></i>
-                <em class="key">类型</em>
-                <div class="conList clearfix">
-                    
-                    <a href="http://www.liushouer.com/home/List?type=book">电子书</a>
-                    <a href="http://www.liushouer.com/home/List?type=picture">图画书</a>
-                    <a href="http://www.liushouer.com/home/List?type=video">视频</a>
-                    <a class="cur" href="http://www.liushouer.com/home/List?type=special">特色课堂</a>
-                </div>
-            </div>
-            <div class="single clearfix">
-                <i class="icon-grid"></i>
-                <em class="key">课程</em>
-                <div class="conList clearfix">
-                    <a class="cur" href="http://www.liushouer.com/home/List?type=special&amp;age=all&amp;interest=all&amp;cate=all&amp;sort=new">全部</a>
-                        <a href="http://www.liushouer.com/home/List?type=special&amp;age=all&amp;interest=all&amp;cate=400&amp;sort=new">科普</a>
-                </div>
-            </div>
         </div>
-        
-        <div class="sortTitle">
-            <span class="key">智能排序：</span>
-            <span class="sort new cur" data-url="/home/List?type=special&amp;age=all&amp;interest=all&amp;cate=all&amp;sort=new">最新发布</span>
-            <span class="sort hot " data-url="/home/List?type=special&amp;age=all&amp;interest=all&amp;cate=all&amp;sort=moreview">最热点击</span>
-            <span class="sort store " data-url="/home/List?type=special&amp;age=all&amp;interest=all&amp;cate=all&amp;sort=morelike">最多收藏</span>
-            <span class="result">共有<em class="total">12</em>条结果</span>
-        </div>
-        <ul class="list vList clearfix">
-            {volist name="video_list" id="vo"}
-                <li>
-                    <a href="/index/video/info?id={$vo.id}">
-                          <img class="img" src="{$vo.face_img}">
-                        <span class="name">{$vo.title}</span>
-                                                    <i class="videoBtn"></i>
-                    </a>
-                </li>
-            {/volist}
-        </ul>
-        
+    </header>
 
-    <div class="page">
-        <span class="disabled">上一页</span>
-            <a href="http://www.liushouer.com/home/List?type=special#" class="cur">1</a>
-        <span class="disabled">下一页</span>
-    </div>
 
-    </div>
-    <div class="bottomBg"></div>
-</div>
-        <!--content end-->
-        <!--footer-->
-        
-<div id="footer">
-    <div class="friendLink">
+    <div id="listContent">
+        <div class="topBg"></div>
         <div class="inner">
-            <h3 class="linkTitle">友情链接</h3>
-            <ul class="linkList clearfix">
-                    <li><a href="http://www.ndcnc.gov.cn/" target="_blank" title="国家数字文化网">国家数字文化网</a></li>
-                    <li><a href="http://www.hljlib.org.cn/" target="_blank" title="黑龙江省图书馆">黑龙江省图书馆</a></li>
-                    <li><a href="http://www.hljwht.gov.cn/" target="_blank" title="黑龙江省文化厅">黑龙江省文化厅</a></li>
-                
+            <p class="crumb">当前位置：<em>首页</em> ＞ <em class="cur">特色课堂</em></p>
+
+            <!--
+            <div class="conditions">
+                <div class="single clearfix">
+                    <i class="icon-people"></i>
+                    <em class="key">年龄</em>
+                    <div class="conList clearfix">
+                        <a class="cur" href="/index/video/cate?cate_id=1&sort=new">全部</a>
+                            <a href="/index/video/cate?cate_id=1&sort=new">0-3岁</a>
+                            <a href="/index/video/cate?cate_id=1&sort=new">12-15岁</a>
+                            <a href="/index/video/cate?cate_id=1&sort=new">3-6岁</a>
+                            <a href="/index/video/cate?cate_id=1&sort=new">6-9岁</a>
+                            <a href="/index/video/cate?cate_id=1&sort=new">9-12岁</a>
+                    </div>
+                </div>
+                <div class="single clearfix">
+                    <i class="icon-star"></i>
+                    <em class="key">兴趣</em>
+                    <div class="conList clearfix">
+                        <a class="cur" href="/index/video/cate?cate_id=1&sort=new">全部</a>
+                            <a href="/index/video/cate?cate_id=1&sort=new">生活常识</a>
+                            <a href="/index/video/cate?cate_id=1&sort=new">艺术培养</a>
+                            <a href="/index/video/cate?cate_id=1&sort=new">益智百科</a>
+                    </div>
+                </div>
+                <div class="single clearfix">
+                    <i class="icon-grid"></i>
+                    <em class="key">课程</em>
+                    <div class="conList clearfix">
+                        <a class="cur" href="/index/video/cate?cate_id=1&sort=new">全部</a>
+                            <a href="/index/video/cate?cate_id=1&sort=new">科普</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sortTitle">
+                <span class="key">智能排序：</span>
+                <a class="sort new cur" href="/index/video/cate?cate_id=1&sort=new">最新发布</a>
+                <a class="sort hot " href="/index/video/cate?cate_id=1&sort=view_num">最热点击</a>
+                <span class="result">共有<em class="total">{$total}</em>条结果</span>
+            </div>
+            -->
+
+            <ul class="list vList clearfix">
+                {volist name="video_list" id="vo"}
+                    <li>
+                        <a href="/index/video/info?id={$vo.id}">
+                              <img class="img" src="{$vo.face_img}">
+                            <span class="name">{$vo.title}</span>
+                                                        <i class="videoBtn"></i>
+                        </a>
+                    </li>
+                {/volist}
             </ul>
+
+
+        <!--<div class="page">-->
+            <!--<span class="disabled">上一页</span>-->
+                <!--<a href="http://www.liushouer.com/home/List?type=special#" class="cur">1</a>-->
+            <!--<span class="disabled">下一页</span>-->
+        <!--</div>-->
+        {$page}
+
         </div>
+        <div class="bottomBg"></div>
     </div>
-    <div class="copyright">
-        <div class="inner clearfix">
-            <a class="help" href="http://www.liushouer.com/home/manual">使用帮助</a>
-            <a class="aboutUs" href="http://www.liushouer.com/home/aboutus">关于我们</a>
-            <span class="right">版权所有：黑龙江图书馆信息部</span>
-            <span class="totalVisit">总访问量:3399</span>
+
+        
+    <div id="footer">
+        <div class="friendLink">
+            <div class="inner">
+                <h3 class="linkTitle">友情链接</h3>
+                <ul class="linkList clearfix">
+                        <li><a href="http://www.ndcnc.gov.cn/" target="_blank" title="国家数字文化网">国家数字文化网</a></li>
+                        <li><a href="http://www.hljlib.org.cn/" target="_blank" title="黑龙江省图书馆">黑龙江省图书馆</a></li>
+                        <li><a href="http://www.hljwht.gov.cn/" target="_blank" title="黑龙江省文化厅">黑龙江省文化厅</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="inner clearfix">
+                <a class="help" href="http://www.liushouer.com/home/manual">使用帮助</a>
+                <a class="aboutUs" href="http://www.liushouer.com/home/aboutus">关于我们</a>
+                <span class="right">版权所有：黑龙江图书馆信息部</span>
+                <span class="totalVisit">总访问量:3399</span>
+            </div>
         </div>
     </div>
 </div>
-    </div>
 
-
-
-
-
-
-
-
-
-</body></html>
+</body>
+</html>
