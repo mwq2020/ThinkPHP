@@ -105,7 +105,7 @@ ul.ad2{display:none;}
             </div>
             <div class="con deodar">
                     <a href="/index/video/info?id={$recommend.id}" title="{$recommend.title}" target="_blank">
-                        <img alt="{$recommend.title}" src="/static/image/index/W020171010394566951114.jpg">
+                        <img alt="{$recommend.title}" src="/static/vedio_face/{$recommend.face_img}">
                     </a>
                     <h1><a href="/index/video/info?id={$recommend.id}" target="_blank">{$recommend.title}</a></h1>
                     <p>{$recommend.description}<a href="/index/video/info?id={$recommend.id}" target="_blank">[详细]</a></p>
@@ -124,7 +124,7 @@ ul.ad2{display:none;}
                     {volist name="vo.video_list" id="video"}
                     <li class="ls2">
                         <a href="/index/video/info?id={$video.id}" title="{$video.title}" target="_blank">
-                            <img alt="{$video.title}" src="/static/image/index/W020171031552064182243.jpg">
+                            <img alt="{$video.title}" src="/static/vedio_face/{$video.face_img}">
                         </a>
                     </li>
                     {/volist}
@@ -144,7 +144,7 @@ ul.ad2{display:none;}
                         {volist name="special_list" id="vo"}
                         <li class="ls2">
                             <a href="/index/video/info?id={$vo.id}" title="{$vo.title}" target="_blank">
-                                <img alt="{$vo.title}" src="/static/image/index/W020171031560640459943.jpg">
+                                <img alt="{$vo.title}" src="/static/vedio_face/{$vo.face_img}">
                             </a>
                         </li>
                         {/volist}
@@ -164,7 +164,7 @@ ul.ad2{display:none;}
                 {volist name="ranking_list" id="vo"}
                 <li>
                     <a href="/index/video/info?id={$vo.id}" title="{$vo.title}" target="_blank">
-                        <img src="/static/image/index/W020171031552064182243.jpg" alt="{$vo.title}"/>
+                        <img src="/static/vedio_face/{$vo.face_img}" alt="{$vo.title}"/>
                     </a>
                 </li>
                 {/volist}
