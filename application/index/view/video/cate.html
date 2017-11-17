@@ -84,9 +84,9 @@
                 {volist name="video_list" id="vo"}
                     <li>
                         <a href="/index/video/info?id={$vo.id}">
-                              <img class="img" src="{$vo.face_img}">
+                            <img class="img" src="/static/vedio_face/{$vo.face_img}">
                             <span class="name">{$vo.title}</span>
-                                                        <i class="videoBtn"></i>
+                            <i class="videoBtn"></i>
                         </a>
                     </li>
                 {/volist}
