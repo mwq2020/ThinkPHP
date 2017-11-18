@@ -109,6 +109,7 @@
         </div>
         {/volist}
     </div>
+    {$page}
 </div>
 
 <style>
@@ -128,20 +129,50 @@
         overflow:hidden;
     }
     .video_item {
-        width: 192px;
+        width: 226px;
         height:auto;
         float:left;
         margin:3px 5px;
     }
     .video_item img{
-        width: 192px;
+        width: 226px;
         height:auto;
     }
     .video_item p{
-        width: 192px;
+        width: 226px;
         overflow:hidden;
         height:41px;
         text-indent:0;
+    }
+
+
+
+
+    .pagination {
+        height:0.9rem;
+        padding:0.75rem 0.75rem;
+        text-align:center;
+        font-size:0
+    }
+
+    .pagination li {
+        list-style: none;
+        float: left;
+        min-width:1.5rem;
+        height:0.70rem;
+        padding:0.6rem;
+        margin:0.6rem;
+        border:1px solid #ccc;
+        color:#999;
+        line-height:0.78rem
+    }
+
+    .pagination li span{
+        font-size: 14px;
+    }
+
+    .pagination li a{
+        font-size: 14px;
     }
 </style>
 
