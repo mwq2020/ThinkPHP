@@ -82,14 +82,14 @@ ul.ad2{display:none;}
 <div id="navSub">
     <h2><a title="精准扶贫综合视频" href="http://www.ndcnc.gov.cn/juchang/">精准扶贫综合视频</a></h2>
     <ul>
-        <li class="t1"><a href="/index/video/cate?cat_id=1">彩色儿童画</a></li>
-        <li class="t2"><a href="/index/video/cate?cat_id=1">儿童手工</a></li>
-        <li><a href="/index/video/cate?cat_id=1">儿童书法</a></li>
-        <li><a href="/index/video/cate?cat_id=1">儿童舞蹈家</a></li>
-        <li><a href="/index/video/cate?cat_id=1">英雄榜样人物</a></li>
-        <li><a href="/index/video/cate?cat_id=1">儿童安全常识</a></li>
-        <li><a href="/index/video/cate?cat_id=1">儿童全脑开发</a></li>
-        <li><a href="/index/video/cate?cat_id=1">留守儿童专辑</a></li>
+        <li class="t1"><a href="/index/video/video_list?cat_id=1">彩色儿童画</a></li>
+        <li class="t2"><a href="/index/video/video_list?cat_id=1">儿童手工</a></li>
+        <li><a href="/index/video/video_list?cat_id=1">儿童书法</a></li>
+        <li><a href="/index/video/video_list?cat_id=1">儿童舞蹈家</a></li>
+        <li><a href="/index/video/video_list?cat_id=1">英雄榜样人物</a></li>
+        <li><a href="/index/video/video_list?cat_id=1">儿童安全常识</a></li>
+        <li><a href="/index/video/video_list?cat_id=1">儿童全脑开发</a></li>
+        <li><a href="/index/video/video_list?cat_id=1">留守儿童专辑</a></li>
         <!-- <li><a href="http://www.ndcnc.gov.cn/juchang/yinyuehui/">多媒体课件</a></li> -->
     </ul>
 </div>
@@ -104,11 +104,11 @@ ul.ad2{display:none;}
                 </div>
             </div>
             <div class="con deodar">
-                    <a href="/index/video/info?id={$recommend.id}" title="{$recommend.title}" target="_blank">
-                        <img alt="{$recommend.title}" src="/static/vedio_face/{$recommend.face_img}">
+                    <a href="/index/video/video_info?id={$recommend.id}" title="{$recommend.title}" target="_blank">
+                        <img alt="{$recommend.title}" src="{$recommend.face_img}">
                     </a>
-                    <h1><a href="/index/video/info?id={$recommend.id}" target="_blank">{$recommend.title}</a></h1>
-                    <p>{$recommend.description}<a href="/index/video/info?id={$recommend.id}" target="_blank">[详细]</a></p>
+                    <h1><a href="/index/video/video_info?id={$recommend.id}" target="_blank">{$recommend.title}</a></h1>
+                    <p>{$recommend.description}<a href="/index/video/video_info?id={$recommend.id}" target="_blank">[详细]</a></p>
             </div>
         </div>
 
@@ -117,14 +117,14 @@ ul.ad2{display:none;}
         <div class="box">
             <div class="tit">
                 <h2>{$vo.cat_name}</h2>
-                <div><a href="/index/video/cate?cat_id={$vo.id}">更多&gt;&gt;</a></div>
+                <div><a href="/index/video/video_list?cat_id={$vo.id}">更多&gt;&gt;</a></div>
             </div>
             <div class="con">
                 <ul>
                     {volist name="vo.video_list" id="video"}
                     <li class="ls2">
-                        <a href="/index/video/info?id={$video.id}" title="{$video.title}" target="_blank">
-                            <img alt="{$video.title}" src="/static/vedio_face/{$video.face_img}">
+                        <a href="/index/video/video_info?id={$video.id}" title="{$video.title}" target="_blank">
+                            <img alt="{$video.title}" src="{$video.face_img}">
                         </a>
                     </li>
                     {/volist}
@@ -136,15 +136,15 @@ ul.ad2{display:none;}
         <div class="box bsA">
             <div class="tit">
                 <h2>音乐会</h2>
-                <div><a href="/index/video/cate?cat_id=1">更多&gt;&gt;</a></div>
+                <div><a href="/index/video/video_list?cat_id=1">更多&gt;&gt;</a></div>
             </div>
             <div class="con">
                 <div class="mod11">
                     <ul>
                         {volist name="special_list" id="vo"}
                         <li class="ls2">
-                            <a href="/index/video/info?id={$vo.id}" title="{$vo.title}" target="_blank">
-                                <img alt="{$vo.title}" src="/static/vedio_face/{$vo.face_img}">
+                            <a href="/index/video/video_info?id={$vo.id}" title="{$vo.title}" target="_blank">
+                                <img alt="{$vo.title}" src="{$vo.face_img}">
                             </a>
                         </li>
                         {/volist}
@@ -157,14 +157,14 @@ ul.ad2{display:none;}
     <div class="box bs2">
         <div class="tit">
             <h2>资源推荐</h2>
-            <div><a href="/index/video/cate?cat_id=1">更多&gt;&gt;</a></div>
+            <div><a href="/index/video/video_list?cat_id=1">更多&gt;&gt;</a></div>
         </div>
         <div class="con">
             <ul class="txt2">
                 {volist name="ranking_list" id="vo"}
                 <li>
-                    <a href="/index/video/info?id={$vo.id}" title="{$vo.title}" target="_blank">
-                        <img src="/static/vedio_face/{$vo.face_img}" alt="{$vo.title}"/>
+                    <a href="/index/video/video_info?id={$vo.id}" title="{$vo.title}" target="_blank">
+                        <img src="{$vo.face_img}" alt="{$vo.title}"/>
                     </a>
                 </li>
                 {/volist}

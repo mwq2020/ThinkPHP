@@ -62,7 +62,7 @@ h1 a,h3 a{color:#c00;}
 #navSub h2,#navSub ul{float:left; overflow:hidden;}
 #navSub h2,#navSub h2 a{width:148px; height:50px;}
 #navSub h2 a{display:block; text-indent:-999px;}
-#navSub ul{height:16px; padding:19px 0 15px 0;}
+#navSub ul{height:16px; padding:19px 0 15px 0;margin-left:33px;}
 #navSub li{border-left:1px solid #f0f0f0; clear:none; display:inline; font-size:14px; float:left; height:16px; line-height: 16px; padding:0 23px; white-space:nowrap; width:auto;}
 #navSub li a{color:#f0f0f0;}
 #navSub li a:hover{color:#ff8; text-decoration:none;}
