@@ -66,7 +66,7 @@ class Video extends \think\Controller
     {
         $cate_id = isset($_REQUEST['cat_id']) && $_REQUEST['cat_id'] > 0 ? intval($_REQUEST['cat_id']) : 1;
         $sort = isset($_REQUEST['sort']) && in_array($_REQUEST['sort'],array('new','view_num')) ? trim($_REQUEST['sort']) : 'new';
-        $db = Db::table('video_list')->where(['cat_id' => $cate_id]);
+        $db = Db::table('video_list')->where(['cat_id' => $cate_id,'is_show'=>1]);
         if($sort == 'new'){
             $db->order('add_time desc');
         } else {

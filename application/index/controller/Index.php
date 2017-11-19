@@ -15,12 +15,12 @@ class Index extends \think\Controller
         $cat_list = Db::table('category')->select();
 
         foreach($cat_list as &$row){
-            $row['video_list'] = Db::table('video_list')->where(['cat_id'=>$row['id']])->limit(0,2)->select();
+            $row['video_list'] = Db::table('video_list')->where(['cat_id'=>$row['id'],'is_show'=>1])->limit(0,2)->select();
         }
 
-        $ranking_list = Db::table('video_list')->order('view_num desc')->limit(0,10)->select();
-        $special_list = Db::table('video_list')->order('view_num desc')->limit(0,4)->select();
-        $recommend = Db::table('video_list')->order('view_num desc')->find();
+        $ranking_list = Db::table('video_list')->order('view_num desc')->where(['is_show'=>1])->limit(0,10)->select();
+        $special_list = Db::table('video_list')->order('view_num desc')->where(['is_show'=>1])->limit(0,4)->select();
+        $recommend = Db::table('video_list')->where(['is_show'=>1])->order('view_num desc')->find();
 
         $view_data = [];
         $view_data['cat_list']      = $cat_list;
