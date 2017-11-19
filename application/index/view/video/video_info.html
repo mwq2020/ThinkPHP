@@ -79,16 +79,16 @@
 </div>
 
 <div id="navSub">
-    <h2><a title="精准扶贫综合视频" href="http://www.ndcnc.gov.cn/juchang/">精准扶贫综合视频</a></h2>
+    <h2><a title="精准扶贫综合视频" href="/">精准扶贫综合视频</a></h2>
     <ul>
-        <li class="t1"><a href="/index/video/cate?cat_id=1">彩色儿童画</a></li>
-        <li class="t2"><a href="/index/video/cate?cat_id=1">儿童手工</a></li>
-        <li><a href="/index/video/cate?cat_id=1">儿童书法</a></li>
-        <li><a href="/index/video/cate?cat_id=1">儿童舞蹈家</a></li>
-        <li><a href="/index/video/cate?cat_id=1">英雄榜样人物</a></li>
-        <li><a href="/index/video/cate?cat_id=1">儿童安全常识</a></li>
-        <li><a href="/index/video/cate?cat_id=1">儿童全脑开发</a></li>
-        <li><a href="/index/video/cate?cat_id=1">留守儿童专辑</a></li>
+        <li class="t1"><a href="/index/video/video_list?cat_id=1">彩色儿童画</a></li>
+        <li class="t2"><a href="/index/video/video_list?cat_id=1">儿童手工</a></li>
+        <li><a href="/index/video/video_list?cat_id=1">儿童书法</a></li>
+        <li><a href="/index/video/video_list?cat_id=1">儿童舞蹈家</a></li>
+        <li><a href="/index/video/video_list?cat_id=1">英雄榜样人物</a></li>
+        <li><a href="/index/video/video_list?cat_id=1">儿童安全常识</a></li>
+        <li><a href="/index/video/video_list?cat_id=1">儿童全脑开发</a></li>
+        <li><a href="/index/video/video_list?cat_id=1">留守儿童专辑</a></li>
         <!-- <li><a href="http://www.ndcnc.gov.cn/juchang/yinyuehui/">多媒体课件</a></li> -->
     </ul>
 </div>
@@ -102,8 +102,8 @@
     <div class="video_info">
         <div class="videoBox">
             <video id="my-video" class="video-js" controls preload="auto" poster="{$video_info.face_img}"
-                   style="width: 100%; background-color: rgb(0, 0, 0);opacity:1"
-                   width="740" height="400" data-setup="{}">
+                   style="width:100%;background-color:rgb(0, 0, 0);opacity:1"
+                   data-setup="{}" >
                 <source src="{$video_info.video_url}" type="video/mp4">
             </video>
         </div>
@@ -127,11 +127,11 @@
         margin-bottom:5px;
     }
     .video_info {
-        position:relative;
+        border:1px solid #cccccc;
+        width: auto;
     }
     .video_info .videoBox{
         border:1px solid #cccccc;
-        position:relative;
         overflow:hidden;
         margin:5px;
     }
