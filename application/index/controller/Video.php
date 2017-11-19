@@ -1,9 +1,12 @@
 <?php
 namespace app\index\controller;
 use \think\Db;
+use \think\Loader;
 
 class Video extends \think\Controller
 {
+    public $file_list = [];
+    public $file_execl_list=[];
     public function index()
     {
         return $this->fetch();
@@ -106,5 +109,98 @@ class Video extends \think\Controller
 
         return $this->fetch('video_info',$view_data);
     }
+
+    public function updateVideo()
+    {
+        $list = Db::table('video_list')->select();
+        foreach($list as $row){
+            //更新视频文件名和视频封面到图表中
+
+        }
+
+
+    }
+
+    public function importData()
+    {
+        $file_name = "/www/test/thinkphp/购买资源整理目录.xlsx";
+
+        Loader::import('PHPExcel.Classes.PHPExcel');
+        Loader::import('PHPExcel.Classes.PHPExcel.IOFactory.PHPExcel_IOFactory');
+        Loader::import('PHPExcel.Classes.PHPExcel.Reader.Excel5');
+        $objReader =\PHPExcel_IOFactory::createReader('Excel2007');
+        $obj_PHPExcel =$objReader->load($file_name, $encode = 'utf-8');  //加载文件内容,编码utf-8
+        $excel_array=$obj_PHPExcel->getsheet(0)->toArray();   //转换为数组格式
+        array_shift($excel_array);  //删除第一个数组(标题)
+
+        $this->video_file();
+        $file_execl_list =$this->file_execl_list;
+        echo "<pre>";
+//        print_r($file_execl_list);
+
+        $exist_nums = 0;
+        $video_list = array();
+        foreach($excel_array as $row){
+            $temp = array();
+            $temp['video_sn']   = $row[0];
+            $temp['theme']      = $row[1];
+            $temp['cat_id']     = 0;
+            $temp['cat_name']   = $row[6];
+            $temp['title']      = $row[2];
+            $temp['face_img']   = '';
+            $temp['video_url']  = '';
+            $temp['description']= empty($row[12]) ? '' : $row[12];
+            $temp['duration_seconds'] = intval($row[10])*60 + intval($row[11]);
+            if(isset($file_execl_list[$temp['title']])){
+                echo "<br>{$temp['title']}：已存在";
+                $temp['video_url']  = str_replace('/www/test/thinkphp/public','',$this->file_execl_list[$temp['title']]);
+                $temp['face_img']   = str_replace(array('vedio','mp4'),array('vedio_face','jpg'),$temp['video_url']);
+                $exist_nums ++;
+                unset($this->file_execl_list[$temp['title']]);
+            }
+
+
+            Db::table('video_list')->insert($temp);
+            $video_list[] = $temp;
+        }
+        echo "<br>已存在文件".$exist_nums."个<br>";
+        print_r($this->file_execl_list);
+        //print_r($video_list);
+        exit;
+    }
+
+    public function video_file()
+    {
+        $video_path="/www/test/thinkphp/public/static/vedio/压缩标清资源";
+        $this->getfiles($video_path);
+        //echo "<pre>";
+        //print_r($this->file_list);
+        $mp4_list = array();
+        foreach($this->file_list as $row){
+            $file_info = pathinfo($row);
+            if($file_info['extension'] != 'mp4'){
+                continue;
+            }
+            $file_name = str_replace(array('_batch',".","1","2","3","4","5","6","7","8","9","0"),array('','','','','','','','','','','',''),$file_info['filename']);
+            $mp4_list[$file_name] = $row;
+        }
+
+        $this->file_execl_list = $mp4_list;
+//       return $mp4_list;
+    }
+
+    public function getfiles($path){
+        foreach(glob($path) as $afile){
+            if(is_dir($afile)){
+                $this->getfiles($afile.'/*');
+            } else {
+                $this->file_list[] = $afile;
+                //echo $afile.'<br />';
+            }
+        }
+    }
+
+
+
 
 }
