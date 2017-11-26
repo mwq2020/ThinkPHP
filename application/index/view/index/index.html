@@ -7,9 +7,9 @@
 <title>精准扶贫-国家数字文化网</title>
 <meta name="keywords" content="经典剧场">
 <meta name="description" content="经典剧场">
-<link href="/static/css/index/tb.css" rel="stylesheet" type="text/css">
-<link href="/static/css/index/temp.css" rel="stylesheet" type="text/css">
-<link href="/static/css/index/css.css" rel="stylesheet" type="text/css">
+<link href="/static/css/index/tb.css?v=1" rel="stylesheet" type="text/css">
+<link href="/static/css/index/temp.css?v=1" rel="stylesheet" type="text/css">
+<link href="/static/css/index/css.css?v=1" rel="stylesheet" type="text/css">
 <script src="/static/js/index/hm.js"></script>
 <script type="text/javascript" src="/static/js/index/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="/static/js/index/menu.js"></script>
@@ -82,7 +82,7 @@ ul.ad2{display:none;}
 <div id="navSub">
     <h2><a title="精准扶贫综合视频" href="/">精准扶贫综合视频</a></h2>
     <ul>
-        {foreach name="cat_list" item="vo" key="k"}
+        {foreach name="nav_list" item="vo" key="k"}
             {if condition="$k eq '0'"}
             <li class="t1"><a href="/index/video/video_list?cat_id={$vo.id}">{$vo.cat_name}</a></li>
             {else /}<li><a href="/index/video/video_list?cat_id={$vo.id}">{$vo.cat_name}</a></li>
