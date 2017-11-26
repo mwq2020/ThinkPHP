@@ -3,7 +3,7 @@
 
 /*本页导航*/
 #navSub{background:url(/static/image/index/img.png) no-repeat;}
-#navSub li{padding:0 16px;}
+#navSub li{padding:0 3px;}
 
 /*本页布局*/
 .mod1{width:710px; margin-right:0;}

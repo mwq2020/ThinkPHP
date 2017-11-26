@@ -62,11 +62,11 @@ h1 a,h3 a{color:#c00;}
 #navSub h2,#navSub ul{float:left; overflow:hidden;}
 #navSub h2,#navSub h2 a{width:148px; height:50px;}
 #navSub h2 a{display:block; text-indent:-999px;}
-#navSub ul{height:16px; padding:19px 0 15px 0;margin-left:33px;}
-#navSub li{border-left:1px solid #f0f0f0; clear:none; display:inline; font-size:14px; float:left; height:16px; line-height: 16px; padding:0 23px; white-space:nowrap; width:auto;}
+#navSub ul{height:16px; padding:19px 0 15px 0;margin-left:60px;}
+#navSub li{border-left:1px solid #f0f0f0; clear:none; display:inline; font-size:14px; float:left; height:16px; line-height: 16px; padding:0 3px; white-space:nowrap; width:auto;}
 #navSub li a{color:#f0f0f0;}
 #navSub li a:hover{color:#ff8; text-decoration:none;}
-#navSub li.t1{font-weight:bold; border:none; padding-left:28px; display:none;}
+#navSub li.t1{font-weight:bold; border:none; padding-left:2px;}
 #navSub li.t2{border:none; padding-left:28px;}
 
 /*块修饰*/
@@ -94,6 +94,7 @@ ul.txt1 li{line-height:25px; font-size:14px; text-indent:14px; background:url(/s
 ul.txt1 li span{font-size:12px; color:#aaa; padding-left:12px;}
 ul.txt2 li{background:url(/static/image/index/li_03.png) no-repeat left; line-height:25px; border-bottom:1px dashed #ddd;}
 ul.txt3 li{line-height:21px; font-size:12px; text-indent:12px; background:url(/static/image/index/li_01.png) no-repeat left;}
+.txt2 li p {text-indent:0;}
 
 ul.txt1 li.t1,ul.txt1 li.t2{height:79px; line-height:21px; overflow:hidden; padding-bottom:10px; margin-bottom:10px; border-bottom:1px dashed #ddd; background:none; text-indent:0;}
 ul.txt1 li.t2{height:108px;}
@@ -106,12 +107,13 @@ ul.pic1 li{width:104px; height:108px; float:left; clear:none; text-align:center;
 ul.pic1 li a{line-height:29px; clear:both;}
 ul.pic1 li img{height:75px; width:100px;}
 
-.con li.ls1,.con li.ls2,div.mod1 div.con li.ls1,div.mod1 div.con li.ls2{height:115px; border:none; overflow:hidden; text-indent:0;}
+.con li.ls1,.con li.ls2,div.mod1 div.con li.ls1,div.mod1 div.con li.ls2{height:130px; border:none; overflow:hidden; text-indent:0;}
 .con li.ls1 p,.con li.ls2 p{clear:none; line-height:21px; margin:0;}
 .con li.ls1 img,.con li.ls2 img{height:100px; width:75px; border:none; background:url(/static/image/index/hb.png) 0 -160px; padding:2px 4px 4px 2px; display:block; float:left; margin-right:10px;}
 .con li.ls2 img{background:url(/static/image/index/hb.png) -130px -110px; width:151px;}
 .con li.ls2 h3{padding:0; height:16px; line-height:16px; margin:0 0 12px 0; text-align:center; clear:both; font-size:16px;}
 .con li.ls2 h3 a{color:#333;}
+.ls2 p {text-indent:0;}
 
 ul.num{background:url(/static/image/index/num1.png) no-repeat;}
 ul.num1{background:url(/static/image/index/num2.png) no-repeat;}

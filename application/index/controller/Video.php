@@ -74,12 +74,16 @@ class Video extends \think\Controller
         }
 
         $video_list = $db->paginate(12);
+        $video_info = Db::table('category')->where(['id'=>$cate_id])->find();
+        $nav_list = Db::table('category')->select();
 
         $page = $video_list->render();
 
         $view_data = [];
         $view_data['video_list'] = $video_list;
-        $view_data['page']      = $page;
+        $view_data['video_info'] = $video_info;
+        $view_data['nav_list']   = $nav_list;
+        $view_data['page']       = $page;
         $view_data['total']      = $video_list->total;
 
         return $this->fetch('video_list',$view_data);
@@ -98,11 +102,12 @@ class Video extends \think\Controller
         }
 
         $cate_info = Db::table('category')->where(['id'=>$video_info['cat_id']])->find();
+        $nav_list = Db::table('category')->select();
 
         $view_data = [];
         $view_data['video_info']      = $video_info;
         $view_data['cate_info']      = $cate_info;
-
+        $view_data['nav_list']   = $nav_list;
 //        echo "<pre>";
 //        print_r($video_info);
 //        exit;

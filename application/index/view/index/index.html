@@ -4,7 +4,7 @@
 
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
 <meta content="zh-cn" http-equiv="Content-language">
-<title>经典剧场-国家数字文化网</title>
+<title>精准扶贫-国家数字文化网</title>
 <meta name="keywords" content="经典剧场">
 <meta name="description" content="经典剧场">
 <link href="/static/css/index/tb.css" rel="stylesheet" type="text/css">
@@ -82,15 +82,21 @@ ul.ad2{display:none;}
 <div id="navSub">
     <h2><a title="精准扶贫综合视频" href="/">精准扶贫综合视频</a></h2>
     <ul>
-        <li class="t1"><a href="/index/video/video_list?cat_id=1">彩色儿童画</a></li>
-        <li class="t2"><a href="/index/video/video_list?cat_id=1">儿童手工</a></li>
-        <li><a href="/index/video/video_list?cat_id=1">儿童书法</a></li>
-        <li><a href="/index/video/video_list?cat_id=1">儿童舞蹈家</a></li>
-        <li><a href="/index/video/video_list?cat_id=1">英雄榜样人物</a></li>
-        <li><a href="/index/video/video_list?cat_id=1">儿童安全常识</a></li>
-        <li><a href="/index/video/video_list?cat_id=1">儿童全脑开发</a></li>
-        <li><a href="/index/video/video_list?cat_id=1">留守儿童专辑</a></li>
-        <!-- <li><a href="http://www.ndcnc.gov.cn/juchang/yinyuehui/">多媒体课件</a></li> -->
+        {foreach name="cat_list" item="vo" key="k"}
+            {if condition="$k eq '0'"}
+            <li class="t1"><a href="/index/video/video_list?cat_id={$vo.id}">{$vo.cat_name}</a></li>
+            {else /}<li><a href="/index/video/video_list?cat_id={$vo.id}">{$vo.cat_name}</a></li>
+            {/if}
+        {/foreach}
+        <!--<li class="t1"><a href="/index/video/video_list?cat_id=1">彩色儿童画</a></li>-->
+        <!--<li class="t2"><a href="/index/video/video_list?cat_id=1">儿童手工</a></li>-->
+        <!--<li><a href="/index/video/video_list?cat_id=1">儿童书法</a></li>-->
+        <!--<li><a href="/index/video/video_list?cat_id=1">儿童舞蹈家</a></li>-->
+        <!--<li><a href="/index/video/video_list?cat_id=1">英雄榜样人物</a></li>-->
+        <!--<li><a href="/index/video/video_list?cat_id=1">儿童安全常识</a></li>-->
+        <!--<li><a href="/index/video/video_list?cat_id=1">儿童全脑开发</a></li>-->
+        <!--<li><a href="/index/video/video_list?cat_id=1">留守儿童专辑</a></li>-->
+        <li><a href="/index/video/video_list?cat_id=1">多媒体课件</a></li>
     </ul>
 </div>
 
@@ -126,6 +132,7 @@ ul.ad2{display:none;}
                         <a href="/index/video/video_info?id={$video.id}" title="{$video.title}" target="_blank">
                             <img alt="{$video.title}" src="{$video.face_img}">
                         </a>
+                        <p>{$video.title}</p>
                     </li>
                     {/volist}
                 </ul>
@@ -135,7 +142,7 @@ ul.ad2{display:none;}
 
         <div class="box bsA">
             <div class="tit">
-                <h2>音乐会</h2>
+                <h2>多媒体课件</h2>
                 <div><a href="/index/video/video_list?cat_id=1">更多&gt;&gt;</a></div>
             </div>
             <div class="con">
@@ -146,6 +153,7 @@ ul.ad2{display:none;}
                             <a href="/index/video/video_info?id={$vo.id}" title="{$vo.title}" target="_blank">
                                 <img alt="{$vo.title}" src="{$vo.face_img}">
                             </a>
+                            <p>{$vo.title}</p>
                         </li>
                         {/volist}
                     </ul>
@@ -157,7 +165,6 @@ ul.ad2{display:none;}
     <div class="box bs2">
         <div class="tit">
             <h2>资源推荐</h2>
-            <div><a href="/index/video/video_list?cat_id=1">更多&gt;&gt;</a></div>
         </div>
         <div class="con">
             <ul class="txt2">
@@ -166,6 +173,7 @@ ul.ad2{display:none;}
                     <a href="/index/video/video_info?id={$vo.id}" title="{$vo.title}" target="_blank">
                         <img src="{$vo.face_img}" alt="{$vo.title}"/>
                     </a>
+                    <p>{$vo.title}</p>
                 </li>
                 {/volist}
             </ul>
