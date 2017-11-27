@@ -180,7 +180,8 @@ class Video extends \think\Controller
 
     public function video_file()
     {
-        $video_path="/www/test/thinkphp/public/static/vedio/儿童绘画";
+        //$video_path="/www/test/thinkphp/public/static/vedio/儿童绘画";
+        $video_path="/var/www/thinkphp/public/static/vedio/儿童绘画";
         $this->getfiles($video_path);
         //echo "<pre>";
         //print_r($this->file_list);
