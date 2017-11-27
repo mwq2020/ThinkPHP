@@ -73,7 +73,7 @@ class Video extends \think\Controller
             $db->order('view_num desc');
         }
 
-        $video_list = $db->paginate(12);
+        $video_list = $db->paginate(12,false,['query'=> ['cat_id' => $cate_id]]);
         $video_info = Db::table('category')->where(['id'=>$cate_id])->find();
         $nav_list = Db::table('category')->select();
 
