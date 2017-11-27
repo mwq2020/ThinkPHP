@@ -121,12 +121,23 @@ class Video extends \think\Controller
         $file_execl_list =$this->file_execl_list;
         echo "<pre>";
         print_r($file_execl_list);
-        exit;
+        //exit;
 
-        $list = Db::table('video_list')->select();
-        foreach($list as $row){
+
+        foreach($file_execl_list as $key => $row){
             //更新视频文件名和视频封面到图表中
-
+            $temp = array();
+            $temp['video_sn']   = '';
+            $temp['theme']      = '';
+            $temp['cat_id']     = 2;
+            $temp['cat_name']   = '儿童绘画';
+            $temp['second_cat_name']   = basename(basename($row));
+            $temp['title']      = $key;
+            $temp['face_img']   = str_replace(array('mp4','/var/www/thinkphp/public/static'),array('jpg',''),$row);
+            $temp['video_url']  = str_replace('/var/www/thinkphp/public/static','',$row);
+            $temp['description']= '';
+            $temp['duration_seconds'] = 0;
+            Db::table('video_list_new')->insert($temp);
         }
     }
 
