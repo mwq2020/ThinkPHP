@@ -191,7 +191,7 @@ class Video extends \think\Controller
             if($file_info['extension'] != 'mp4'){
                 continue;
             }
-            $file_name = str_replace(array('_batch',".","1","2","3","4","5","6","7","8","9","0"),array('','','','','','','','','','','',''),$file_info['filename']);
+            $file_name = str_replace(array('_batch',".","1","2","3","4","5","6","7","8","9","0",'（','）','《','》','第集'),array('','','','','','','','','','','','','','','','',''),$file_info['filename']);
             $mp4_list[$file_name] = $row;
         }
 
