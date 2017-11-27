@@ -117,13 +117,17 @@ class Video extends \think\Controller
 
     public function updateVideo()
     {
+        $this->video_file();
+        $file_execl_list =$this->file_execl_list;
+        echo "<pre>";
+        print_r($file_execl_list);
+        exit;
+
         $list = Db::table('video_list')->select();
         foreach($list as $row){
             //更新视频文件名和视频封面到图表中
 
         }
-
-
     }
 
     public function importData()
@@ -176,7 +180,7 @@ class Video extends \think\Controller
 
     public function video_file()
     {
-        $video_path="/www/test/thinkphp/public/static/vedio/压缩标清资源";
+        $video_path="/www/test/thinkphp/public/static/vedio/儿童绘画";
         $this->getfiles($video_path);
         //echo "<pre>";
         //print_r($this->file_list);
